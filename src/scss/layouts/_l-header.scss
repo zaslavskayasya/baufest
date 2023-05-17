@@ -1,0 +1,260 @@
+@use '../helpers' as h;
+
+/* header */
+
+.header {
+  width: 100%;
+  z-index: 3;
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 46px ;
+  position: relative;
+}
+
+.for-mobile{
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;  
+  list-style-type: none;
+  margin-right: 226px;;
+  transition: all ease 0.3s;
+    li{
+        &:not(:last-child) {
+            margin-right: 37px;
+        }
+        .dropbtn {
+            margin-right: 14px;
+        }
+        &:hover{
+            color: h.$accent-color;
+        }
+            
+    }
+}
+
+.langs{
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu-button{
+    display: none;
+}
+.close-button {
+    display: none;
+}
+
+.menu-link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.langs{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+    li:not(:last-child){
+        margin-right: 15px;;
+    }
+    li.active{ 
+        color: h.$accent-color;
+    }
+    li:hover{
+        color: h.$accent-color;
+    }
+    
+}
+
+
+
+
+/* Dropup Button */
+.dropbtn {
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: block;
+        right: -18px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/arrow-down-bold.svg);
+
+
+    }
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  top:20px;
+  background-color: #fff; 
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+
+}
+
+@media screen and (max-width: 1700px){
+    .menu {
+        margin-right: 127px;
+    }
+
+}
+@media screen and (max-width: 1600px){
+    .menu {
+        margin-right: 90px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1170px){
+    .for-mobile{
+        position: absolute;
+        top: -100%;
+        background: #fff;
+        left: 0px;
+        width: 100%;
+        padding: 80px;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: all ease 0.3s;
+    }
+    .div-for-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .open-header .for-mobile{
+        top: 0%;
+        transform: translateY(0%);
+    }
+    .menu-button{
+        display: block;
+        cursor: pointer;
+        order:2;
+        margin-top: 3px;
+    }
+    .close-button {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        transition: all ease 0.3s;
+        cursor: pointer;
+        &:hover{
+            svg path {
+                stroke: h.$accent-color;
+            }
+
+        }
+    }
+    .menu{
+        flex-direction: column;
+        margin-right: 0px;
+        margin-bottom: 40px;;
+    }
+    .menu li:not(:last-child) {
+        margin-right: 0px;
+    }
+    .menu li{
+        margin-bottom: 15px;
+    }
+    .menu li .dropbtn {
+        margin-right: 0px;
+    }
+    .open-header{
+        .dropup-content{
+            position: relative;
+            background-color: transparent;
+            box-shadow: none;
+            a{
+                padding: 7px 0px;
+            }
+        }
+        .dropup {
+            display: inline-block;
+            position: relative;
+                text-align: center;
+            // margin-bottom: 33px;
+        }
+        .dropup.open{
+            margin-bottom: 20px;
+            .dropup-content{
+                display: block;    
+                width: auto;      
+                    text-align: center;      
+            }
+        }
+    }
+    .dropup:hover .dropup-content {
+        display: none;;
+    }
+    .langs{
+        margin-right: 40px;;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .header {
+        padding: 25px 15px;
+    }
+    .logo{
+        width: 102px;;
+    }
+    .langs li:not(:last-child) {
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .langs {
+        margin-right: 20px;
+    }
+}
