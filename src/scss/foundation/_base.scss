@@ -35,3 +35,13 @@ body {
 .uppercase{
   text-transform: uppercase;
 }
+
+.only-mob{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .only-mob{
+    display: block;
+  }
+}
