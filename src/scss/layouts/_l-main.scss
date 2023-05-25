@@ -857,7 +857,8 @@
         text-align: center;
     }
     .about-wrap .form{
-        width: 90%;
+        width: 100%;
+        padding: 30px 15px 29px 15px;
     }
     .about-wrap{
         padding-bottom: 15px;;
@@ -975,6 +976,7 @@
     }
     .wrap-poposition .left-part {
         padding-left: 0px;
+
     }
     .wrap-poposition .wrap-poposition-illustration {
         height: 714px;
@@ -1201,8 +1203,8 @@
     }
 
     .three-in-row-wrap .wrap-item-image {
-        height: 165px;
-        width: 165px;
+        height: 265px;
+        width: 265px;
     }
     .three-in-row-wrap {
         justify-content: space-evenly;
@@ -1260,15 +1262,64 @@
     }
     .wrap-poposition{
         padding-bottom: 60px;;
+        overflow: hidden;
     }
     .about-wrap .part-1 .normal_text{
         text-align: left;;
     }
     .about-wrap .part-2 .wrap-about-img{
-        height: 345px;
+        height: 100%;
     }
     .heplpfull-block{
         margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (max-width: 630px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 270px;
+        width: 270px;
+    }
+    .three-in-row-wrap .item {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 260px;
+        width: 260px;
+    }
+}
+@media screen and (max-width: 570px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 240px;
+        width: 240px;
+    }
+
+}
+
+@media screen and (max-width: 530px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 230px;
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width: 510px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 210px;
+        width: 210px;
+    }
+
+}
+
+@media screen and (max-width: 455px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 190px;
+        width: 190px;
     }
 
 }
@@ -1281,14 +1332,17 @@
         width: 44%;
     }
     .three-in-row-wrap .wrap-item-image {
-        height: 140px;
-        width: 140px;
+        height: 160px;
+        width: 160px;
     }
     .three-in-row-wrap .item {
         margin-bottom: 17px;
     }
     .portfolio {
         padding: 30px 0;
+    }
+    .three-in-row-wrap .item {
+        width: 47%;
     }
 
 }
@@ -1300,5 +1354,16 @@
     }
     .wrap-types .type-img-wrap {
         height: 86px;
+    }
+    .part-2 {
+        margin: 0px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 354px){
+    .three-in-row-wrap .wrap-item-image {
+        height: 140px;
+        width: 140px;
     }
 }
