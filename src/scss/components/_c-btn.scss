@@ -15,6 +15,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: pointer;
     transition: all ease 0.3s;
     &:hover{
         background:  linear-gradient(-45deg, transparent 15px, #a10a0a 0);
@@ -26,3 +27,9 @@
  
 }
 
+.button.fixed{
+    width: 280px;
+    margin: 0 auto ;
+    display: block;
+
+}
