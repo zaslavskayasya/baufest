@@ -161,13 +161,20 @@
 }
 
 @media screen and (max-width: 768px){
+    .catalog-page-one.catalog-page .h1 {
+        margin-bottom: 15px;
+    }
     .catalog-page-one{
         .h1{
             @include standart-flex;
+            margin-bottom: 15px;
             .slide-price{
                 font-weight: 600;
                 font-size: 20px;;
             }
+        }
+        .normal_text{
+            margin-bottom: 15px;;
         }
         .catalog-slider .slide-price{
             font-size: 20px;
@@ -196,6 +203,7 @@
     .catalog-page-one .catalog-slider .wrap-button {
         top: 0;
         margin-top: 130px;
+        right: 0px
     }
     .catalog-page-one{
         .catalog-slider .slick-dots {
@@ -235,6 +243,9 @@
     }
     .catalog-page-one .actual-colors-block .h2{
         margin-bottom: 30px;
+    }
+    .descriptin-block {
+        margin-bottom: 60px;
     }
     
 }
