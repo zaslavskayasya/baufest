@@ -11,7 +11,11 @@
     "reset": "npx gulp reset",
     "reset:img": "npx gulp resetImg"
   },
-  "keywords": ["bolerplate", "pug", "sass"],
+  "keywords": [
+    "bolerplate",
+    "pug",
+    "sass"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Minaki-web/boilerplate"
@@ -44,5 +48,8 @@
     "last 1 version",
     "IE 11",
     "> 1%"
-  ]
+  ],
+  "dependencies": {
+    "lightbox2": "^2.11.4"
+  }
 }

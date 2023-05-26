@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link href="./plugins/phone/css/intlTelInput.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link href="./plugins/lightbox/css/lightbox.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
       < script src = "./plugins/phone/js/data.js" >
     </script>
@@ -36,6 +37,7 @@
     <script src="./plugins/phone/js/intlTelInput.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/header.js" defer></script>
+    <script src="./plugins/lightbox/js/lightbox.min.js"></script>
     <script src="./js/catalog-one.js" defer></script>
   </head>
   <body>
@@ -88,26 +90,26 @@
           <li class="bread-li"> <a class="bread-link" href="#">Каталог</a></li>
           <li class="bread-li"> <a class="bread-link" href="#">Лайнстоун</a></li>
         </ul>
-        <p class="h1">Лайнстоун</p>
+        <p class="h1">Лайнстоун <span class="only-mob slide-price">від 260 грн/м</span></p>
         <div class="catalog-slider">
           <div class="slide">
             <div class="wrap-slider-img"><img src="./img/slider/1.jpg" alt=""></div>
             <div class="wrap-button">
-              <div class="slide-price">від 260 грн/м<sup>2</sup></div>
+              <div class="slide-price only-desktop">від 260 грн/м<sup>2</sup></div>
               <div class="button">Замовити </div>
             </div>
           </div>
           <div class="slide">
             <div class="wrap-slider-img"><img src="./img/catalog/linestone/500_340.jpg" alt=""></div>
             <div class="wrap-button">
-              <div class="slide-price">від 260 грн/м<sup>2</sup></div>
+              <div class="slide-price only-desktop">від 260 грн/м<sup>2</sup></div>
               <div class="button">Замовити </div>
             </div>
           </div>
           <div class="slide">
             <div class="wrap-slider-img"><img src="./img/catalog/linestone/old_citi_razm_1_17.webp" alt=""></div>
             <div class="wrap-button">
-              <div class="slide-price">від 260 грн/м<sup>2</sup></div>
+              <div class="slide-price only-desktop">від 260 грн/м<sup>2</sup></div>
               <div class="button">Замовити </div>
             </div>
           </div>
@@ -228,7 +230,7 @@
         <div class="char-block">
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">ВЫСОТА, ММ</p>
+              <p class="normal_text">Висота, ММ</p>
             </div>
             <div class="char-right">
               <p class="normal_text">40</p>
@@ -236,7 +238,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">РАЗМЕРЫ В КОМПЛЕКТЕ, ММ</p>
+              <p class="normal_text">Розміри у комплекті, ММ</p>
             </div>
             <div class="char-right">
               <p class="normal_text">300х300; 300х150; 150х150</p>
@@ -244,7 +246,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">НАЛИЧИЕ ФАСКИ</p>
+              <p class="normal_text">Наявність фаски</p>
             </div>
             <div class="char-right">
               <p class="normal_text">мікрофаска</p>
@@ -252,7 +254,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">ВЕС 1 ПОДДОНА, КГ</p>
+              <p class="normal_text">Вага 1 піддону, КГ</p>
             </div>
             <div class="char-right">
               <p class="normal_text">1307</p>
@@ -260,7 +262,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">ВОДОПОГЛОЩЕНИЕ, НЕ >, %</p>
+              <p class="normal_text">Водопоглинання, НЕ >, %</p>
             </div>
             <div class="char-right">
               <p class="normal_text">6</p>
@@ -268,7 +270,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">УКЛАДОЧНАЯ ПЛОЩАДЬ С 1 ПОДДОНА, КВ. М</p>
+              <p class="normal_text">Вкладочка площа С 1 , КВ. М</p>
             </div>
             <div class="char-right">
               <p class="normal_text">14,4</p>
@@ -276,7 +278,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">КЛАСС БЕТОНА</p>
+              <p class="normal_text">Клас бетону</p>
             </div>
             <div class="char-right">
               <p class="normal_text">B35</p>
@@ -284,7 +286,7 @@
           </div>
           <div class="char-row">
             <div class="char-left">
-              <p class="normal_text">МОРОЗОСТОЙКОСТЬ, F</p>
+              <p class="normal_text">Морозостійкість, F</p>
             </div>
             <div class="char-right">
               <p class="normal_text">F200 </p>
@@ -339,6 +341,21 @@
           </div>
         </div>
         <div class="button fixed">Замовити </div>
+      </div>
+      <div class="gallery-block">
+        <div class="container">
+          <p class="h2 text-center">Галерея </p>
+          <div class="gallery">
+            <div class="parent">
+              <div class="div1 img-wrp img-height"><a href="./img/portfolio/1.png" data-lightbox="gallery"> <img src="./img/portfolio/1.png" alt=""></a></div>
+              <div class="div2 img-wrp img-height"><a href="./img/portfolio/2.png" data-lightbox="gallery"> <img src="./img/portfolio/2.png" alt=""></a></div>
+              <div class="div3 img-wrp img-height"><a href="./img/portfolio/3.png" data-lightbox="gallery"> <img src="./img/portfolio/3.png" alt=""></a></div>
+              <div class="div4 img-wrp img-height"><a href="./img/catalog/standart/cegla2.png" data-lightbox="gallery"> <img src="./img/catalog/standart/cegla2.png" alt=""></a></div>
+              <div class="div5 img-wrp img-height"><a href="./img/catalog/standart/katuska.png" data-lightbox="gallery"> <img src="./img/catalog/standart/katuska.png" alt=""></a></div>
+              <div class="div6 img-wrp"><a href="./img/catalog/standart/nofas.png" data-lightbox="gallery"> <img src="./img/catalog/standart/nofas.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="price-list-block">
         <div class="marquee wrap-types">

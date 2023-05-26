@@ -17,13 +17,14 @@
             li.bread-li 
                 a(href="#").bread-link Лайнстоун
 
-        p.h1 Лайнстоун
+        p.h1 Лайнстоун 
+            span.only-mob.slide-price від 260 грн/м
         .catalog-slider 
             .slide 
                 .wrap-slider-img
                     img(src="./img/slider/1.jpg", alt="")
                 .wrap-button 
-                    .slide-price від 260 грн/м
+                    .slide-price.only-desktop від 260 грн/м
                         sup 2
                     .button Замовити             
             .slide 
@@ -31,7 +32,7 @@
                 .wrap-slider-img
                     img(src="./img/catalog/linestone/500_340.jpg", alt="")
                 .wrap-button 
-                    .slide-price від 260 грн/м
+                    .slide-price.only-desktop від 260 грн/м
                         sup 2
                     .button Замовити   
             .slide 
@@ -39,7 +40,7 @@
                 .wrap-slider-img
                     img(src="./img/catalog/linestone/old_citi_razm_1_17.webp", alt="")
                 .wrap-button 
-                    .slide-price від 260 грн/м
+                    .slide-price.only-desktop від 260 грн/м
                         sup 2
                     .button Замовити 
         .descriptin-block 
@@ -152,42 +153,42 @@
         .char-block 
             .char-row 
                 .char-left 
-                    p.normal_text ВЫСОТА, ММ
+                    p.normal_text Висота, ММ
                 .char-right 
                     p.normal_text 40
             .char-row 
                 .char-left 
-                    p.normal_text РАЗМЕРЫ В КОМПЛЕКТЕ, ММ
+                    p.normal_text Розміри у комплекті, ММ
                 .char-right 
                     p.normal_text 300х300; 300х150; 150х150
             .char-row 
                 .char-left 
-                    p.normal_text НАЛИЧИЕ ФАСКИ
+                    p.normal_text Наявність фаски
                 .char-right 
                     p.normal_text мікрофаска
             .char-row 
                 .char-left 
-                    p.normal_text ВЕС 1 ПОДДОНА, КГ
+                    p.normal_text Вага 1 піддону, КГ
                 .char-right 
                     p.normal_text 1307
             .char-row 
                 .char-left 
-                    p.normal_text ВОДОПОГЛОЩЕНИЕ, НЕ >, %
+                    p.normal_text Водопоглинання, НЕ >, %
                 .char-right 
                     p.normal_text 6
             .char-row 
                 .char-left 
-                    p.normal_text УКЛАДОЧНАЯ ПЛОЩАДЬ С 1 ПОДДОНА, КВ. М
+                    p.normal_text Вкладочка площа С 1 , КВ. М
                 .char-right 
                     p.normal_text 14,4
             .char-row 
                 .char-left 
-                    p.normal_text КЛАСС БЕТОНА
+                    p.normal_text Клас бетону
                 .char-right 
                     p.normal_text B35
             .char-row 
                 .char-left 
-                    p.normal_text МОРОЗОСТОЙКОСТЬ, F
+                    p.normal_text Морозостійкість, F
                 .char-right 
                     p.normal_text F200        
 .catalog-page-one.catalog-page 
@@ -243,6 +244,30 @@
                         .wrap-item-image
                             img(src="./img/catalog/linestone/sheme/13.png", alt="")
         .button.fixed Замовити 
+    .gallery-block 
+        .container
+            p.h2.text-center Галерея 
+            .gallery 
+                .parent
+                    .div1.img-wrp.img-height
+                        a(href="./img/portfolio/1.png" data-lightbox="gallery")                         
+                            img(src="./img/portfolio/1.png", alt="")
+                    .div2.img-wrp.img-height
+                        a(href="./img/portfolio/2.png" data-lightbox="gallery")   
+                            img(src="./img/portfolio/2.png", alt="") 
+                    .div3.img-wrp.img-height
+                        a(href="./img/portfolio/3.png" data-lightbox="gallery")   
+                            img(src="./img/portfolio/3.png", alt="")
+                    .div4.img-wrp.img-height
+                        a(href="./img/catalog/standart/cegla2.png" data-lightbox="gallery")    
+                            img(src="./img/catalog/standart/cegla2.png", alt="")
+                    .div5.img-wrp.img-height
+                        a(href="./img/catalog/standart/katuska.png" data-lightbox="gallery")    
+                            img(src="./img/catalog/standart/katuska.png", alt="")
+                    .div6.img-wrp
+                        a(href="./img/catalog/standart/nofas.png" data-lightbox="gallery")  
+                            img(src="./img/catalog/standart/nofas.png", alt="")
+    
     .price-list-block
         .marquee.wrap-types
             .back-text прайс-лист
