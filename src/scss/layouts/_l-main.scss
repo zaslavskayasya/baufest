@@ -318,10 +318,7 @@
 
 
 .check{
-    display: flex;
-    align-items: center;
     margin-bottom: 15px;
-
     .check-img{
         width: 24px;
         height: 24px;
@@ -334,7 +331,7 @@
 
 .advantages-row .check{
     margin-bottom: 70px;
-    padding-top: 40px;;
+    padding-top: 0px;;
 }
 
 
@@ -354,6 +351,11 @@
 .price-list-block{
     padding: 80px 0px;
     position: relative;
+    &.clean-background{
+        &:before {
+            display: none;;
+        }
+    }
     &:before{
         content: "";
         display: block; 

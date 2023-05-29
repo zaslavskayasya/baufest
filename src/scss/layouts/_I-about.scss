@@ -1,0 +1,154 @@
+.about-slider-wrap{
+    margin-bottom: 200px;
+    .main-slider{
+        .slide{
+            padding-top: 0px;;
+        }
+    }
+}
+.about-company-block{
+    margin-bottom: 130px;
+}
+.about-company-page{
+    .h1{
+        margin-bottom: 35px;;
+    }
+    .breadcrambps{
+        margin-bottom: 66px;;
+    }
+}
+
+.center-heading {
+    max-width: 80%;
+    margin: 0 auto 80px;;
+}
+
+.large-block {
+    margin-bottom: 80px ;
+}
+
+.big-back-text{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 101px;
+    line-height: 123px;
+    color: #DEDEDE;
+    opacity: 0.8;
+    position: relative;
+    margin-bottom: 50px;;
+    &:after{
+        content: "";
+        height: 92px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 3px;
+        top: 15px;
+        width: 20px;
+        background-image: url(../img/arrow-up.svg);
+    }
+
+}
+
+
+@media screen and (max-width:1100px){
+    .about-slider-wrap{
+        margin-bottom: 130px;;
+
+        .slider__counter {
+            bottom: -71px;
+            left: 44%;
+        }
+        .slick-next, .slick-prev{
+            bottom: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 970px){
+    .two-parts-50 .item-50{
+        width: 100%;
+        margin-bottom: 20px;;
+    }
+    .two-parts-50{
+        flex-direction: column;
+        &.no-response {
+            flex-direction: row;
+            .item-50{
+                width: 49%;
+                min-height: 230px;;
+
+            }
+
+        }
+    }
+    .two-parts-50 .part-left{
+        padding-right: 0px;;
+    }
+    .part-right.item-50{
+        min-height: 230px;;
+        height: 230px;;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;;
+        }
+
+    }
+    .about-company-block{
+        margin-bottom: 100px;;
+    }
+    .large-block{
+        margin-bottom: 40px;
+    }
+    .margin-130{
+        margin-bottom: 60px;;
+    }
+    .big-back-text {
+        color: #dedede;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: initial;
+    }    
+    .big-back-text:after{
+        height: 40px;
+        background-size: cover;
+        right: 19px;
+        top: 0px;
+        width: 12px;
+    }
+    .center-heading {
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .about-company-block{
+        .h2.centered{
+            text-align: left;
+
+        }
+        .center-heading{
+            text-align: left;;
+            width: 100%;;
+            max-width: 100%;
+        }
+
+
+    }
+    .about-company-block{
+        margin-bottom: 30px;;
+    }
+    .two-parts-50{
+        .h2{
+            margin-bottom: 15px;;
+        }
+        .normal_text_bold {
+            font-size: 16px;
+        }
+    }
+    .about-company-page .breadcrambps {
+        margin-bottom: 30px;
+    }
+}
