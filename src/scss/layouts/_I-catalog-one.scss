@@ -75,7 +75,6 @@
 
 
 .descriptin-block {
-    margin-bottom: 183px;
     @include standart-flex;
     align-items: flex-start;
     .text-block {
@@ -154,9 +153,7 @@
         }
 
     }
-    .descriptin-block{
-        margin-bottom: 90px;;
-    }
+
 
 }
 
@@ -244,9 +241,7 @@
     .catalog-page-one .actual-colors-block .h2{
         margin-bottom: 30px;
     }
-    .descriptin-block {
-        margin-bottom: 60px;
-    }
+
     
 }
 

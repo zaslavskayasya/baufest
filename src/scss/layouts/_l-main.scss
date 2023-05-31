@@ -730,54 +730,76 @@
 
     }
 
-    .form{ 
-        width: 407px;
-        background-color: #fff;
-        padding: 52px 51px 52px  40px;
-        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-        .h2{
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 24px;;
+}
+.form{ 
+    width: 407px;
+    background-color: #fff;
+    padding: 52px 51px 52px  40px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    .h2{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 24px;;
+    }
+    .form-row{
+        max-width: 252px;
+        // margin-bottom: 24px;
+        margin: 0 auto 24px;
+        display: flex;;
+        flex-direction: column;
+        label{
+            font-family: inherit;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            color: #D6DBE0;
         }
-        .form-row{
-            max-width: 252px;
-            // margin-bottom: 24px;
-            margin: 0 auto 24px;
-            display: flex;;
-            flex-direction: column;
-            label{
-                font-family: inherit;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 150%;
-                color: #D6DBE0;
-            }
-            input::placeholder{
-                font-family: inherit;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 150%;                
-                color: #888C8F;
-            }
-            input{
-                color: #1A2335;
-                width: 252px;
-                height: 60px;
-                background: #F7F7F7;
-                padding-left: 15px;
-            }
+        input::placeholder{
+            font-family: inherit;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;                
+            color: #888C8F;
         }
-        .buttom{
-            margin: 0 auto;
-            display: block;
-            width: 250px;;
+        input{
+            color: #1A2335;
+            width: 252px;
+            height: 60px;
+            background: #F7F7F7;
+            padding-left: 15px;
         }
     }
-}
+    .buttom{
+        margin: 0 auto;
+        display: block;
+        width: 250px;;
+    }
+    &.form-in-line{
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .form-row{
+            margin-bottom: 0px;
+            width: 32%;
+            max-width: 32%;
+            .button{
+                margin-bottom: 0px;;
+            }
+            input{
+                width: 100%;
+            }
+        }
+    }  
+}    
 
+.iti--separate-dial-code .iti__selected-flag{
+    background-color: #f7f7f7;
+}
 .adresses-wrap{
     .line{
         padding: 40px 0px 40px;
