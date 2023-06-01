@@ -194,7 +194,11 @@ body {
 }
 
 
-
+.flex-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
 
 .grey-backgrounds{
@@ -228,4 +232,12 @@ body {
   .two-parts-50 .item-40{
     width: 100%;
   }
+  .part-right.item-50{
+    height: auto;
+  }
+  .want-more-block.not-up{
+    margin-top: 0px;;
+
+  }
 }
+
