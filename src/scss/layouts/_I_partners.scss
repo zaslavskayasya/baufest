@@ -1,0 +1,137 @@
+.main-pick-place{
+    position: relative;
+    .button{
+        position: absolute;
+         top: -20px;
+         right: 40px;
+    }
+}
+
+.small-icon{
+    max-width: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 25px;;
+    margin-left: 15px;
+}
+
+
+.connect-block{
+    .simple-link{
+        margin-bottom: 50px;
+    }
+    .simple-link img{
+        margin-right: 15px;;
+    }
+    .toclient{
+        max-width: 60%;
+    }
+    p.normal_text{
+        margin-right: 10px;;
+    }
+    form{
+        width: 100%;
+    }
+    .form .form-row{
+        width: 90%;
+        max-width: 90%;
+        input{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+}
+
+.pluses-section{
+    .main-pick-place{
+        margin-bottom: 40px;;
+    }
+    .check{
+        width: 33%;
+        padding: 0px 25px 0px 25px;
+    }
+    .h4{
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .flex-start{
+        .check{
+            width: 100%;
+        }
+    }
+    .partners-page .main-pick-place{
+        margin-bottom: 30px;;
+    }
+    .main-pick-place .button{
+        position: relative;
+        right: 0px;
+        margin-top: 0px;
+    }
+    .partners-page{
+        .main-pick-place{
+            img{
+                margin-bottom: 40px;;
+            }
+
+        }
+        .centered{
+            text-align: left;
+        }
+        .h4{
+            font-size: 18px;
+        }
+        .small-icon {
+            margin-left: 0px;
+            margin-right: 14px;
+        }
+        .simple-link{
+            // display: block;
+            justify-content: center;
+            margin: 0 auto 20px; ;
+        }
+    }
+    .grey-60{
+        font-size: 30px;;
+        text-align: center;
+    }
+    .connect-block p.normal_text{
+        text-align: center;
+        margin: 0 auto 30px;;
+        width: 90%;
+    }
+
+
+    .connect-block{
+        .reset{
+            position: relative;
+            img{
+                position: absolute;
+                transform: rotate(90deg);
+                height: 5px;
+                right: -10px;
+                top: 0px;
+
+            }
+        }
+        .form{
+            padding: 25px 15px;
+            .form-name.h2{
+                font-size: 18px;;
+                
+            }
+        }
+    }
+    .pluses-section{
+        .flex-start{
+            flex-direction: column;
+        }
+    }
+    .main-pick-place.main-screen-page{
+        margin-bottom: 130px;;
+    }
+    
+
+}

@@ -20,5 +20,8 @@ if  isAbout
   script(src=jsPath + "about.js" defer)
 
 if  isLaboratory
-  script(src="./plugins/lightbox/js/lightbox.min.js")
   script(src=jsPath + "laboratory.js" defer)
+
+if isPartners 
+  script(src=jsPath + "partners.js" defer)
+
