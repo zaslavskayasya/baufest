@@ -1,0 +1,84 @@
+.design-page{
+    .check{
+        margin-bottom: 36px; ;
+    }
+}
+
+.perevagy{
+    align-items: flex-start;
+    .item{ 
+        padding: 0px 10px;
+    }
+}
+
+
+.etaps-row{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    .number{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 70px; 
+        color: #E5E5E5;
+        margin-right: 90px;
+        width: 120px;
+        min-width: 120px;
+        display: block;
+    }
+    .normal_text_bold{
+        margin-bottom: 20px;
+    }
+}
+
+.design-project {
+    .check{
+        margin-bottom: 36px;
+
+    }
+    .button{
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media screen  and (max-width: 970px) {
+    .perevagy{
+        flex-flow: wrap;
+        justify-content: flex-start;
+        .item{
+            width: 33%;
+        }
+
+    } 
+    .etaps-row .number {
+        margin-right: 34px;
+    }
+    .etaps-row .normal_text_bold{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+@media screen  and (max-width: 680px) {
+    .perevagy.flex-5{
+         .item{
+            width: 100%;
+            text-align: center;;
+        }
+
+    } 
+    .etaps-row .number{
+        font-size: 22px;;
+        width: 40px;
+        min-width: 40px;;
+        margin-right: 5px;
+        line-height: 100%;
+    }
+
+}

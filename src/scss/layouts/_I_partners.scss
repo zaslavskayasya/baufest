@@ -56,13 +56,20 @@
     }
 }
 
+
+@media screen and (max-width: 980px){
+    .main-pick-place{
+        margin-bottom: 60px;;
+    }
+}
+
 @media screen and (max-width: 768px){
     .flex-start{
         .check{
             width: 100%;
         }
     }
-    .partners-page .main-pick-place{
+    .inner-page .main-pick-place{
         margin-bottom: 30px;;
     }
     .main-pick-place .button{
@@ -70,7 +77,7 @@
         right: 0px;
         margin-top: 0px;
     }
-    .partners-page{
+    .inner-page{
         .main-pick-place{
             img{
                 margin-bottom: 40px;;
@@ -103,7 +110,6 @@
         width: 90%;
     }
 
-
     .connect-block{
         .reset{
             position: relative;
@@ -113,14 +119,12 @@
                 height: 5px;
                 right: -10px;
                 top: 0px;
-
             }
         }
         .form{
             padding: 25px 15px;
             .form-name.h2{
-                font-size: 18px;;
-                
+                font-size: 18px;                
             }
         }
     }
@@ -131,7 +135,6 @@
     }
     .main-pick-place.main-screen-page{
         margin-bottom: 130px;;
-    }
-    
+    }   
 
 }

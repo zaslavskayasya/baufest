@@ -69,9 +69,8 @@
             flex-direction: row;
             .item-50{
                 width: 49%;
-                min-height: 230px;;
-
-            }
+                min-height: auto       
+                 }
 
         }
     }
@@ -80,7 +79,7 @@
     }
     .part-right.item-50{
         min-height: 230px;;
-        height: 230px;;
+        height: auto;
         img{
             width: 100%;
             height: 100%;

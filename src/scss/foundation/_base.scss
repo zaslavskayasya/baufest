@@ -186,7 +186,6 @@ body {
 }
 
 .flex-5{
-
   .item{
     width: 19%;
 
@@ -206,6 +205,23 @@ body {
   padding: 60px 0px;
 }
 
+.red-header{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;  
+  text-transform: lowercase;  
+  color: #E11E1E;
+  margin-bottom: 15px;
+}
+
+.small-text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #1A2335;
+}
 
 @media screen and (max-width: 768px){
   .only-mob{
@@ -239,5 +255,8 @@ body {
     margin-top: 0px;;
 
   }
+  .red-header{
+    font-size: 22px;;
+}
 }
 
