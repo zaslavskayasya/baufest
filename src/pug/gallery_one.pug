@@ -1,0 +1,14 @@
+extends ./helpers/layout/_layout
+
+block value
+  - const path = ".";
+  - const IsGalleryOne = true;
+
+block header
+  include components/header/_header
+
+block main
+  include components/main/_gallery_one
+
+block footer
+  include components/footer/_footer
