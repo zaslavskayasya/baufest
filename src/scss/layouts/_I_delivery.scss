@@ -1,0 +1,30 @@
+.two-parts-50.delivery-block  img.delivery-img{
+    width: 100%;
+    display: flex;
+    height: auto;;
+    object-fit: none;
+
+}
+
+.rule-text{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 85.1442px;
+    line-height: 104px;
+    
+    color: #DEDEDE;
+    
+    opacity: 0.8;
+    max-width: 240px;
+    float: right; 
+    padding-top: 35px;;
+}
+
+@media screen and (max-width: 768px){
+    .two-parts-50.delivery-block img.delivery-img{
+        object-fit: contain;
+    }
+    .rule-text{
+        display: none;
+    }
+}
