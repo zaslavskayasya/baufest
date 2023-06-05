@@ -71,4 +71,15 @@ closeThankYouModalBtn.addEventListener("click", function() {
   thankYouModal.style.display = "none";
   overlay.style.display = "none";
 });
+
+let inputFlag = document.querySelector(".phone-flag");
+
+  window.intlTelInput(inputFlag, {
+    showFlags: true,
+    separateDialCode: true,
+    allowDropdown: true,
+    preferredCountries: ["ua","pl", "md" ],
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+  });
+
 //# sourceMappingURL=header.js.map
