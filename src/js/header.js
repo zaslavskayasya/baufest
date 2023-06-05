@@ -29,4 +29,45 @@ dropsBtns.forEach((item, e)=>{
         }
 
     })
-})
+});
+
+
+
+
+
+var openModalBtns = document.querySelectorAll(".openModal");
+var modal = document.querySelector(".modal");
+var closeBtns = document.querySelectorAll(".close");
+var overlay = document.querySelector(".overlay");
+var thankYouModal = document.querySelector(".modal-thankYouModal");
+var closeThankYouModalBtn = thankYouModal.querySelector(".close");
+var form = document.querySelector(".form");
+
+openModalBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    modal.style.display = "block";
+    overlay.style.display = "block";
+  });
+});
+
+closeBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    modal.style.display = "none";
+    overlay.style.display = "none";
+  });
+});
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  // Виконайте додаткову обробку форми, наприклад, відправку даних на сервер
+  // Якщо відправка успішна, виконайте наступне:
+  modal.style.display = "none";
+  overlay.style.display = "none";
+  thankYouModal.style.display = "block";
+  overlay.style.display = "block";
+});
+
+closeThankYouModalBtn.addEventListener("click", function() {
+  thankYouModal.style.display = "none";
+  overlay.style.display = "none";
+});

@@ -48,3 +48,29 @@ footer.l-footer
                 .copy-block 
                     p Создание сайта — студия 
                         a(href="#").underline Март
+
+
+
+div.modal.modal-myModal
+  div.modal-content
+    span.close &times;
+    form.form(action="")
+      p.form-name.h2 Форма зв'язку
+      .form-row
+        label(for="name") Ім'я*
+        input(type="text" name="fname" required placeholder="Введіть ваше ім'я")
+      .form-row
+        label(for="phone") Ваш телефон*
+        input(type="tel" required placeholder="(097) 777–77–77")
+        span#error-msg
+      .form-row
+        button(type="submit").button.button-small Замовити
+
+div.overlay.overlay-modal
+
+div.modal.modal-thankYouModal
+  div.modal-content
+    span.close &times;
+    p.h2.centered Дякуємо за ваше звернення!
+    p.h4.red-text.centered Ми зв'яжемося з вами найближчим часом.
+

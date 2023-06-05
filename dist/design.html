@@ -89,7 +89,7 @@
         </ul>
         <p class="h1">Дизайн-проект</p>
         <div class="main-pick-place main-screen-page"><img src="./img/design/1.png" alt="">
-          <div class="button"> дизайн-проект безкоштовно</div>
+          <div class="button openModal"> дизайн-проект безкоштовно</div>
         </div>
         <div class="two-parts-50 mb-50">
           <div class="part-left item-50">
@@ -183,7 +183,7 @@
               <p class="normal_text_bold">Фрагменти ділянок мощення зі схемами розкладки</p>
             </div>
           </div>
-          <div class="button">дизайн-проект безкоштовно</div>
+          <div class="button openModal">дизайн-проект безкоштовно</div>
           <p class="small-text">*Розробка дизайн-проекту безкоштовна при покупці бруківки від 150 м2</p>
         </div>
         <div class="part-right item-50"> <img src="./img/design/6.png" alt=""></div>
@@ -241,5 +241,30 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-myModal">
+      <div class="modal-content"><span class="close">&times;</span>
+        <form class="form" action="">
+          <p class="form-name h2">Форма зв'язку</p>
+          <div class="form-row">
+            <label for="name">Ім'я*</label>
+            <input type="text" name="fname" required placeholder="Введіть ваше ім'я">
+          </div>
+          <div class="form-row">
+            <label for="phone">Ваш телефон*</label>
+            <input type="tel" required placeholder="(097) 777–77–77"><span id="error-msg"></span>
+          </div>
+          <div class="form-row">
+            <button class="button button-small" type="submit">Замовити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="overlay overlay-modal"></div>
+    <div class="modal modal-thankYouModal">
+      <div class="modal-content"><span class="close">&times;</span>
+        <p class="h2 centered">Дякуємо за ваше звернення!</p>
+        <p class="h4 red-text centered">Ми зв'яжемося з вами найближчим часом.</p>
+      </div>
+    </div>
   </body>
 </html>

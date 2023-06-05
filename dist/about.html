@@ -284,5 +284,30 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-myModal">
+      <div class="modal-content"><span class="close">&times;</span>
+        <form class="form" action="">
+          <p class="form-name h2">Форма зв'язку</p>
+          <div class="form-row">
+            <label for="name">Ім'я*</label>
+            <input type="text" name="fname" required placeholder="Введіть ваше ім'я">
+          </div>
+          <div class="form-row">
+            <label for="phone">Ваш телефон*</label>
+            <input type="tel" required placeholder="(097) 777–77–77"><span id="error-msg"></span>
+          </div>
+          <div class="form-row">
+            <button class="button button-small" type="submit">Замовити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="overlay overlay-modal"></div>
+    <div class="modal modal-thankYouModal">
+      <div class="modal-content"><span class="close">&times;</span>
+        <p class="h2 centered">Дякуємо за ваше звернення!</p>
+        <p class="h4 red-text centered">Ми зв'яжемося з вами найближчим часом.</p>
+      </div>
+    </div>
   </body>
 </html>
