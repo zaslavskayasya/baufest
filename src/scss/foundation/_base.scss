@@ -262,6 +262,33 @@ body {
 }
 }
 
+
+@media screen and (max-width: 768px){
+  .contact-page{
+    .heading {
+      justify-content: space-between;
+  }
+  }
+  .filter {
+
+    max-width: 100%;
+  }
+  .theme-filter {
+    color: #1a2335;
+    font-size: 13px;
+  }
+  .modal-content{
+    width: 100%;
+    padding: 10px;
+    .form {      
+      padding: 20px;
+      width: 300px;
+    }
+  }
+
+}
+
+
 .modal {
   display: none; 
   position: fixed; 
@@ -318,6 +345,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 
 .modal-thankYouModal{
