@@ -1,6 +1,5 @@
 console.log('mainPage js')
 
-
 $(document).ready(function(){
 var $slider = $('.main-slider');
 
@@ -61,28 +60,35 @@ if ($slider.length) {
 }
 });
 
+const marquee = document.querySelector('.marquee');
+marquee.addEventListener('animationiteration', () => {
+  marquee.style.animation = 'none';
+  void marquee.offsetWidth;
+  marquee.style.animation = 'marquee 20s linear infinite'; // Задайте тут ту саму тривалість, яку використовували в CSS
+});
 
-function Marquee(selector, speed) {
-  const parentSelector = document.querySelector(selector);
-  const clone = parentSelector.innerHTML;
-  const firstElement = parentSelector.children[0];
-  let i = 0;
-  console.log(firstElement);
-  // parentSelector.insertAdjacentHTML('beforeend', clone);
 
-  setInterval(function () {
-    firstElement.style.marginLeft = `-${i}px`;
-    if (i > firstElement.clientWidth) {
-      i = 0;
-    }
-    i = i + speed;
-  }, 0);
-}
+// function Marquee(selector, speed) {
+//   const parentSelector = document.querySelector(selector);
+//   const clone = parentSelector.innerHTML;
+//   const firstElement = parentSelector.children[0];
+//   let i = 0;
+//   console.log(firstElement);
+//   // parentSelector.insertAdjacentHTML('beforeend', clone);
 
-//after window is completed load
-//1 class selector for marquee
-//2 marquee speed 0.2
-window.addEventListener('load', Marquee('.marquee', 0.6))
+//   setInterval(function () {
+//     firstElement.style.marginLeft = `-${i}px`;
+//     if (i > firstElement.clientWidth) {
+//       i = 0;
+//     }
+//     i = i + speed;
+//   }, 0);
+// }
+
+// //after window is completed load
+// //1 class selector for marquee
+// //2 marquee speed 0.2
+// window.addEventListener('load', Marquee('.marquee', 0.6))
 
 
 var acc = document.getElementsByClassName("accordion");

@@ -33,44 +33,73 @@ dropsBtns.forEach((item, e)=>{
 
 
 
-
-
 var openModalBtns = document.querySelectorAll(".openModal");
-var modal = document.querySelector(".modal");
+var modals = document.querySelectorAll(".modal");
 var closeBtns = document.querySelectorAll(".close");
 var overlay = document.querySelector(".overlay");
 var thankYouModal = document.querySelector(".modal-thankYouModal");
 var closeThankYouModalBtn = thankYouModal.querySelector(".close");
-var form = document.querySelector(".form");
+var forms = document.querySelectorAll(".form");
 
-openModalBtns.forEach(function(btn) {
+openModalBtns.forEach(function(btn, index) {
   btn.addEventListener("click", function() {
-    modal.style.display = "block";
-    overlay.style.display = "block";
+    openModal(index);
   });
 });
 
-closeBtns.forEach(function(btn) {
+closeBtns.forEach(function(btn, index) {
   btn.addEventListener("click", function() {
-    modal.style.display = "none";
-    overlay.style.display = "none";
+    closeModal(index);
   });
 });
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  // Виконайте додаткову обробку форми, наприклад, відправку даних на сервер
-  // Якщо відправка успішна, виконайте наступне:
-  modal.style.display = "none";
-  overlay.style.display = "none";
-  thankYouModal.style.display = "block";
-  overlay.style.display = "block";
+forms.forEach(function(form, index) {
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+   
+
+    closeModal(index);
+    openThankYouModal();
+  });
 });
 
 closeThankYouModalBtn.addEventListener("click", function() {
+  closeThankYouModal();
+});
+
+// console.log(overlay)
+
+modals.forEach(function(ite, index) {
+  ite.addEventListener("click", function(e) {
+    console.log(e.target);
+    if ($(e.target).hasClass('modal-myModal')) {
+      closeModal(index);
+      overlay.style.display = "none";
+    }
+  });
+});
+
+function openModal(index) {
+  modals[index].style.display = "block";
+  overlay.style.display = "block";
+}
+
+function closeModal(index) {
+  modals[index].style.display = "none";
+  overlay.style.display = "none";
+}
+
+function openThankYouModal() {
+  thankYouModal.style.display = "block";
+  overlay.style.display = "block";
+}
+
+function closeThankYouModal() {
   thankYouModal.style.display = "none";
   overlay.style.display = "none";
-});
+}
+
+
 
 let inputFlag = document.querySelector(".phone-flag");
 

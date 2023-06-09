@@ -7,23 +7,29 @@ header.header
             svg(width='17' height='16' viewbox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg')
                 path(d='M1.0003 14.9676L15.0238 1M1.0003 1L15.0241 14.9676' stroke='#1A2335' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
         .container 
-            nav.menu
-                li
-                    .dropup
-                            a(href="#").dropbtn.menu-link Компанія
-                            .dropup-content
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/about.html') Про нас
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/laboratory.html') Лабораторія
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/partners.html') Партнерам
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/complex.html') Виробничий комплекс
-                li
-                    .dropup
-                            a(href="#").dropbtn.menu-link послуги
-                            .dropup-content
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/design.html') Дизайн проект
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/material.html') Сипучі матеріали
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/delivery.html') Доставка і оплата
-                                a(href='https://zaslavskayasya.github.io/baufest/dist/uklad.html') Укладання бруківки та тротуарної плитки
+            ul.menu
+                li.menu-item-has-children.dropup                   
+                    a(href="#").dropbtn.menu-link Компанія
+                    ul.dropup-content
+                        li
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/about.html') Про нас
+                        li    
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/laboratory.html') Лабораторія
+                        li    
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/partners.html') Партнерам
+                        li    
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/complex.html') Виробничий комплекс
+                li.menu-item-has-children.dropup
+                    a(href="#").dropbtn.menu-link послуги                    
+                    ul.dropup-content
+                        li
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/design.html') Дизайн проект
+                        li
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/material.html') Сипучі матеріали
+                        li
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/delivery.html') Доставка і оплата
+                        li
+                            a(href='https://zaslavskayasya.github.io/baufest/dist/uklad.html') Укладання бруківки та тротуарної плитки
                 li
                     a.menu-link(href='https://zaslavskayasya.github.io/baufest/dist/catalog.html') Продукція
                 li

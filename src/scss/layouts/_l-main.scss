@@ -374,14 +374,38 @@
     }
 
 }
-
-.marquee {
+.wrapper-m {
     overflow: hidden;
-    display: flex;
+    position: relative;
+    height: 280px; /* Задайте висоту, яка вам потрібна */
+  }
+  
+  .marquee {
     position: absolute;
-    top: 0%;
-    z-index: 0;
-}
+    top: -48px; 
+    right: 100%; /* Розташування за межами екрану справа */
+    white-space: nowrap;
+    animation: marquee 5s linear infinite; /* Задайте бажану тривалість анімації */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-100%); /* Повністю заходить за ліву частину екрану */
+    }
+  }
+// .marquee {
+//     overflow: hidden;
+//     display: flex;
+//     position: absolute;
+//     top: 0%;
+//     right: 0%;
+//     width: 100%;
+//     margin-right: -100%;
+//     z-index: 0;
+// }
 .dowload-block{
     .h2{
         margin-bottom: 85px;

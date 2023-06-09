@@ -117,6 +117,12 @@
   z-index: 1;
 }
 
+.menu ul.dropup-content{
+    li{
+        margin-right: 0px;;
+    }
+}
+
 /* Links inside the dropup */
 .dropup-content a {
   color: black;

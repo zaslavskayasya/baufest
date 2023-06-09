@@ -262,12 +262,27 @@ body {
 }
 }
 
-
 @media screen and (max-width: 768px){
   .contact-page{
     .heading {
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:flex-start;
+      
+    }
+    .heading p.normal_text{
+      width: 100%;;
+      max-width: 100%;
+    }
+    .h1{
+      text-align: left;;
+      // margin: 0px;
+      float: left;
+      display: block;
+    }
   }
+  .bread-link{
+    font-size: 14px;;
   }
   .filter {
 
@@ -345,7 +360,15 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal {
+  display: none;
+  /* Решта стилів залишаються незмінними */
+}
 
+.overlay {
+  display: none;
+  /* Решта стилів залишаються незмінними */
+}
 
 
 .modal-thankYouModal{

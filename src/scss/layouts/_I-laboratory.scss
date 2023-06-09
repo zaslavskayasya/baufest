@@ -223,10 +223,11 @@
         height: 100px;
         min-height: 100px;
         width: 46%;
-        margin-right: 15px;
+        margin-right: 10px;
+        margin-left: 10px;;
         margin-bottom: 15px;
         &:nth-child(2){
-            margin-right: 0px;
+            margin-right: 10px;
         }
     }
     .table-row.header{
