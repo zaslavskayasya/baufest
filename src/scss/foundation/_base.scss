@@ -2,6 +2,7 @@
 
 html {
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -259,7 +260,7 @@ body {
   }
   .red-header{
     font-size: 22px;;
-}
+  }
 }
 
 @media screen and (max-width: 768px){
