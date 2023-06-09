@@ -377,15 +377,15 @@
 .wrapper-m {
     overflow: hidden;
     position: relative;
-    height: 280px; /* Задайте висоту, яка вам потрібна */
+    height: 300px; /* Задайте висоту, яка вам потрібна */
   }
   
   .marquee {
     position: absolute;
-    top: -48px; 
+    top: -33px; 
     right: 100%; /* Розташування за межами екрану справа */
     white-space: nowrap;
-    animation: marquee 5s linear infinite; /* Задайте бажану тривалість анімації */
+    animation: marquee 10s linear infinite; /* Задайте бажану тривалість анімації */
   }
   
   @keyframes marquee {
@@ -458,7 +458,7 @@
 .back-text{
     font-style: normal;
     font-weight: 800;
-    font-size: 173px;
+    font-size: 150px;
     line-height: 211px;    
     text-transform: uppercase;    
     color: #F4F4F4;    

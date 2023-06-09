@@ -107,7 +107,7 @@
     .arr-after:after{
         height: 40px;
         background-size: cover;
-        right: 19px;
+        right: -6px;
         top: 0px;
         width: 12px;
     }
@@ -129,6 +129,9 @@
         }
 
 
+    }
+    .marquee {
+        top: 0px;
     }
     .about-company-block{
         margin-bottom: 30px;;

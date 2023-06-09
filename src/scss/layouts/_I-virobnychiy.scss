@@ -19,12 +19,18 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .video-part {
+        height: 212px;
+    }
+}
+
 
 @media screen and (max-width: 768px){
     .grey-number{
       font-size: 18px;
     }
     .video-part{
-        height: 450px;
+        height: 430px;
     }
   }
