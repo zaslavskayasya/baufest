@@ -261,6 +261,13 @@ body {
   .red-header{
     font-size: 22px;;
   }
+  .long-wrap .wrap-image{
+    margin-right: 5px;
+    margin-left: 5px;;
+  }
+  .long-wrap .wrap-image:last-child{
+    margin-right: 10px;;
+  }
 }
 
 @media screen and (max-width: 768px){
