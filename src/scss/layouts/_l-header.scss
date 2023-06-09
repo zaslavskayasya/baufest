@@ -80,10 +80,17 @@
 }
 
 
+.menu a{
 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
 
 /* Dropup Button */
-.dropbtn {
+.menu-item-has-children {
     position: relative;
     &::after{
         content: "";
