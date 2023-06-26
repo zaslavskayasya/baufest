@@ -49,4 +49,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector(".load-btn");
+  
+    button.addEventListener("click", function() {
+      button.classList.add("active");
+      // Вместо следующей строки можно добавить код для отправки запроса или выполнения длительной операции.
+      setTimeout(function() {
+        button.classList.remove("active");
+      }, 2000); // В данном примере просто добавляется задержка в 2 секунды для демонстрации.
+    });
+  });
 //# sourceMappingURL=gallery.js.map

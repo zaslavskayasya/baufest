@@ -9,11 +9,12 @@
                 a(href="#") 
                     img(src="./img/phone.svg", alt="")  
                     span +38–067–734–00–60
-        ul.breadcrambps
-            li.bread-li 
-                a(href="index.html").bread-link Головна 
-            li.bread-li 
-                a(href="#").bread-link Галерея
+        ul.breadcrambps#breadcrambps
+            span
+                span 
+                    a(href="index.html") Головна 
+                span
+                    a(href="#" aria-current="page") Галерея
         p.h1.mb-80 Галерея
         .gallery-block.mb-130
             .filter.flex
@@ -81,4 +82,4 @@
                         img(src="./img/portfolio/2.png", alt="")
                     p.item-subheader Лайнстоун Палермо
                     p.item-name.normal_text_bold    7 ст Фонтана, приватний будинок
-            .button.button-small Показати більше
+            .button.button-small.load-btn Показати більше

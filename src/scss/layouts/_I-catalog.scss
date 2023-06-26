@@ -28,6 +28,9 @@
     }
     .info-2{
         @include standart-flex; 
+        .height{
+            margin-bottom: 0px;;
+        }
     }
     .height{
         font-weight: 500;
@@ -66,43 +69,43 @@
 }
 
 
-.breadcrambps{
+.breadcrambps, #breadcrambps{
     display: flex;
     justify-content: flex-start;
     margin-bottom: 25px;;
     flex-flow: wrap;
-
-}
-.bread-li {
-    position: relative;
-    margin-right: 40px;
-    align-items: center;;
-    &:not(:last-child):after {
-        content: "";
-        display: block;
-        width: 11px;
-        height: 9px;
-        position: absolute;
-        top: 5px ;
-        right: -25px;
-        transform: rotate(-95deg);
-        background-size: cover;
-        background: url(../img/arrow-down-bold.svg);
-
-    }
-    &:last-child{
-        .bread-link{
+    span {
+        position: relative;
+        margin-right: 40px;
+        align-items: center;;
+        color:#1A2335;
+        &:not(:last-child):after {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 9px;
+            position: absolute;
+            top: 5px ;
+            right: -25px;
+            transform: rotate(-95deg);
+            background-size: cover;
+            background: url(../img/arrow-down-bold.svg);
+    
+        }
+        &:last-child{
             color: #888C8F;
+            span{
+                font-weight: 400;
+            }
+        }
+        span{
+            font-style: normal;
             font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;    
+            color: #1A2335;
         }
     }
-}
-.bread-link{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;    
-    color: #1A2335;
 }
 
 .catalog-block{

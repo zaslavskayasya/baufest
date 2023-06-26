@@ -53,3 +53,29 @@
     opacity: 0;
     // display: none;
 }
+
+.load-btn{
+    position: relative;
+    &.active {
+        cursor: progress;    
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30px;
+          height: 30px;
+          border: 5px solid #a0f2ff;
+          border-top-color: transparent;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        }
+      }
+}
+
+@keyframes spin {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

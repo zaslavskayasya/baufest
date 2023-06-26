@@ -9,13 +9,14 @@
                 a(href="#") 
                     img(src="./img/phone.svg", alt="")  
                     span +38–067–734–00–60
-        ul.breadcrambps
-            li.bread-li 
-                a(href="index.html").bread-link Головна 
-            li.bread-li 
-                a(href="index.html").bread-link Галерея 
-            li.bread-li 
-                a(href="#").bread-link 7 ст Фонтана, приватний будинок
+        ul.breadcrambps#breadcrambps
+            span
+                span 
+                    a(href="index.html") Головна 
+                span 
+                    a(href="gallery.html") Галерея 
+                span 
+                    a(aria-current="page") 7 ст Фонтана, приватний будинок
         p.h1 7 ст Фонтана, приватний будинок
         .portfolio-wrap.three-in-row-wrap.mb-130 
             a.item(href="./img/portfolio/1.png" data-lightbox="image-1")
@@ -60,3 +61,11 @@
             .slide
                 .wrap-slider-img
                     img(src="./img/portfolio/2.png", alt="")
+        .two-parts-50.mb-130
+            p.h2 Про проект
+            .part-left.item-50               
+            .part-right.item-50 
+                p.h4  Задача
+                p.normal_text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                p.h4  Рішення
+                p.normal_text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s

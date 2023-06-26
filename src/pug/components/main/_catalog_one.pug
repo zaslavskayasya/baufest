@@ -9,14 +9,14 @@
                 a(href="#") 
                     img(src="./img/phone.svg", alt="")  
                     span +38–067–734–00–60
-        ul.breadcrambps
-            li.bread-li 
-                a(href="index.html").bread-link Головна 
-            li.bread-li 
-                a(href="https://zaslavskayasya.github.io/baufest/dist/catalog.html").bread-link Каталог
-            li.bread-li 
-                a(href="#").bread-link Лайнстоун
-
+        ul.breadcrambps#breadcrambps
+            span
+                span 
+                    a(href="index.html") Головна 
+                span 
+                    a(href="https://zaslavskayasya.github.io/baufest/dist/catalog.html")  Каталог
+                span
+                    a(href="#" aria-current="page") Лайнстоун
         p.h1 Лайнстоун 
             span.only-mob.slide-price від 260 грн/м
         .catalog-slider 
@@ -267,7 +267,15 @@
                     .div6.img-wrp
                         a(href="./img/catalog/standart/nofas.png" data-lightbox="gallery")  
                             img(src="./img/catalog/standart/nofas.png", alt="")
-    
+                    .div7.img-wrp.img-height
+                        a(href="./img/portfolio/1.png" data-lightbox="gallery")                         
+                            img(src="./img/portfolio/1.png", alt="")
+                    .div8.img-wrp.img-height
+                        a(href="./img/portfolio/2.png" data-lightbox="gallery")   
+                            img(src="./img/portfolio/2.png", alt="") 
+                    .div9.img-wrp.img-height
+                        a(href="./img/portfolio/3.png" data-lightbox="gallery")   
+                            img(src="./img/portfolio/3.png", alt="")
     .price-list-block
         .marquee.wrap-types
         .wrapper-m
