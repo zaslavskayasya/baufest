@@ -34,23 +34,20 @@ dropsBtns.forEach((item, e)=>{
 
 
 var openModalBtns = document.querySelectorAll(".openModal");
-var modals = document.querySelectorAll(".modal");
+var modal = document.querySelectorAll(".modal-myModal");
 var closeBtns = document.querySelectorAll(".close");
 var overlay = document.querySelector(".overlay");
 var thankYouModal = document.querySelector(".modal-thankYouModal");
 var closeThankYouModalBtn = thankYouModal.querySelector(".close");
 var forms = document.querySelectorAll(".form");
 
-openModalBtns.forEach(function(btn, index) {
-  btn.addEventListener("click", function() {
-    openModal(index);
-  });
+openModalBtns.forEach(btn => {
+  // console.log(btn, index);
+  btn.addEventListener("click", openModal);
 });
 
-closeBtns.forEach(function(btn, index) {
-  btn.addEventListener("click", function() {
-    closeModal(index);
-  });
+closeBtns.forEach(btn => {
+  btn.addEventListener("click", closeModal);
 });
 
 forms.forEach(function(form, index) {
@@ -58,7 +55,7 @@ forms.forEach(function(form, index) {
     event.preventDefault();
    
 
-    closeModal(index);
+    closeModal();
     openThankYouModal();
   });
 });
@@ -69,23 +66,25 @@ closeThankYouModalBtn.addEventListener("click", function() {
 
 // console.log(overlay)
 
-modals.forEach(function(ite, index) {
-  ite.addEventListener("click", function(e) {
-    console.log(e.target);
-    if ($(e.target).hasClass('modal-myModal')) {
-      closeModal(index);
-      overlay.style.display = "none";
-    }
-  });
-});
+// modals.forEach(function(ite, index) {
+//   ite.addEventListener("click", function(e) {
+//     console.log(e.target);
+//     if ($(e.target).hasClass('modal-myModal')) {
+//       closeModal(index);
+//       overlay.style.display = "none";
+//     }
+//   });
+// });
 
-function openModal(index) {
-  modals[index].style.display = "block";
+function openModal(e) {
+  let target = e.target;
+  // console.log(target);
+  modal[0].style.display = "block";
   overlay.style.display = "block";
 }
 
 function closeModal(index) {
-  modals[index].style.display = "none";
+  modal[0].style.display = "none";
   overlay.style.display = "none";
 }
 
@@ -97,6 +96,16 @@ function openThankYouModal() {
 function closeThankYouModal() {
   thankYouModal.style.display = "none";
   overlay.style.display = "none";
+}
+
+if (modal && modal[0]){
+  modal[0].addEventListener('click', function(e){
+    let target = e.target;
+
+    if (target.classList.contains('modal-myModal')){
+      closeModal();
+    }
+  });
 }
 
 
