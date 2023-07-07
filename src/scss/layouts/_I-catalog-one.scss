@@ -3,12 +3,40 @@
 
 
 .catalog-page-one{
+    .catalog-slider .slick-next, .catalog-slider .slick-prev {
+        bottom: 120px;
+    }
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev{
+        right: 40px;
+    }
+    .wrap-whole-slider{
+        position: relative
+    }
+    .wrap-button{
+        position: absolute;
+        right: 60px;
+        z-index: 9999;
+        width: 255px;;
+        top: -10px;
+    }
+    .slide-price{
+        text-align: center;
+        text-combine-upright: 5px;
+        margin-bottom: 5px;
+        font-size: 19px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
     .wrap-types{
         margin-bottom: 40px;
 
     }
     .h1{
-        margin-bottom: -30px;
+        margin-bottom: 10px;
+        position: relative;
     }
     .actual-colors-block{
         .h2{

@@ -6,10 +6,15 @@
         }
     }
 }
-.about-company-block{
+.about-company-block.container-short{
     margin-bottom: 130px;
 }
 
+.about-company-page{
+    .slider__counter {
+        bottom: -90px;
+    }
+}
 
 .center-heading {
     max-width: 80%;
@@ -18,6 +23,7 @@
 
 .large-block {
     margin-bottom: 80px ;
+    margin-top: 80px;;
 }
 
 .big-back-text{

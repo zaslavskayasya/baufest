@@ -118,7 +118,13 @@ body {
        color: h.$accent-color;
    }
 }
+.normal_text.center-heading, p.center-heading{
+    margin-bottom: 70px;;
+}
 
+.container.about-company-block{
+  margin-bottom: 130px;;
+}
 
 .inner-page{
   .h1{
@@ -128,8 +134,6 @@ body {
       margin-bottom: 66px;;
   }
 }
-
-
 
 
 
@@ -320,7 +324,7 @@ body {
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0,0,0,0.4); 
 }
 
@@ -330,7 +334,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; 
-  max-width: 600px;;
+  max-width: 463px;;
   animation: modal-anim 0.3s ease-out;
   form{
     box-shadow: none;
