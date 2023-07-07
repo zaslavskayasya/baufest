@@ -6,10 +6,15 @@
   width: 100%;
   z-index: 3;
   display: flex;;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 35px 46px ;
   position: relative;
+  .logo{
+    position: absolute;
+    top: 30px ;
+    left: 30px;
+  }
 }
 
 .for-mobile{
@@ -23,7 +28,7 @@
   justify-content: space-between;
   align-items: center;  
   list-style-type: none;
-  margin-right: 226px;;
+  margin-right: 238px;;
   transition: all ease 0.3s;
     li{
         &:not(:last-child) {
@@ -164,7 +169,7 @@
 }
 @media screen and (max-width: 1600px){
     .menu {
-        margin-right: 90px;
+        margin-right: 56px;
     }
     
 }
