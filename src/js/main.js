@@ -60,12 +60,12 @@ if ($slider.length) {
 }
 });
 
-const marquee = document.querySelector('.marquee');
-marquee.addEventListener('animationiteration', () => {
-  marquee.style.animation = 'none';
-  void marquee.offsetWidth;
-  marquee.style.animation = 'marquee 20s linear infinite'; // Задайте тут ту саму тривалість, яку використовували в CSS
-});
+// const marquee = document.querySelector('.marquee');
+// marquee.addEventListener('animationiteration', () => {
+//   marquee.style.animation = 'none';
+//   void marquee.offsetWidth;
+//   marquee.style.animation = 'marquee 20s linear infinite'; // Задайте тут ту саму тривалість, яку використовували в CSS
+// });
 
 
 // function Marquee(selector, speed) {

@@ -76,7 +76,12 @@
     li:hover{
         color: h.$accent-color;
     }
-    
+    li a.disabled{
+        &:hover{
+            color: #1a2335;
+            cursor: text;
+        }
+    }
 }
 
 
