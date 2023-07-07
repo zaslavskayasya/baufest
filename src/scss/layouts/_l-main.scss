@@ -373,9 +373,7 @@
         position: relative;
         z-index: 5;
     }
-    .back-text{
-        text-align: left;
-    }
+
 }
 
 .wrapper-m {
@@ -485,6 +483,7 @@
         position: absolute;
         top: -383px;
         left: -208px;
+        pointer-events: none;
         img{
             display: block;
             width: 100%;
