@@ -40,6 +40,9 @@
         &:hover{
             color: h.$accent-color;
         }
+        .active{
+            color: h.$accent-color;
+        }
             
     }
 }
