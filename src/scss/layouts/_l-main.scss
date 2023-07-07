@@ -7,7 +7,7 @@
 }
 
 .slide{
-    padding-top: 70px;
+    padding-top: 33px;
     position: relative;
     .h1{
         margin-bottom: 34px;
@@ -15,8 +15,8 @@
     }
     .button{
         position: absolute;
-        right: 88px;
-        top: 185px;
+        right: 97px;
+        top: 142px;
         cursor: pointer;
         &:hover{
             background:  linear-gradient(-45deg, transparent 15px, #8d0505 0);
@@ -64,8 +64,8 @@
     font-size: 0px;;
     background-color: h.$accent-color;
     position: absolute;
-    bottom: 19px;
-    right: 0px;
+    bottom: 37px;
+    right: 6px;
     left: auto;
     &:hover{
         background-color: #c10909;
@@ -76,8 +76,8 @@
     font-size: 0px;;
     background-color: #888C8F;
     position: absolute;
-    bottom: 19px;
-    right: 40px;
+    bottom: 37px;
+    right: 46px;
     left: auto;
     &:hover{
         background-color: #5c5d5d;
@@ -91,8 +91,8 @@
 
 .slider__counter{
     position: absolute;
-    left: 50%;
-    bottom: -80px;
+    bottom: -41px;
+    left: 47%;
 }
 
 .slider-number{
@@ -133,7 +133,7 @@
 }
 
 .l-main{
-    margin-bottom: 150px;;
+    margin-bottom: 120px;;
 }
 
 .catalog{
@@ -151,13 +151,13 @@
     display: flex; 
     justify-content: flex-start;
     flex-flow: wrap;
-    margin-bottom: 75px;
+    margin-bottom: 59px;
     .card{
         width: 278px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         cursor: pointer;
         &:not(:nth-child(4n)){
-            margin-right: 19px;
+            margin-right: 29px;
         }
         &:hover{
             img{
@@ -200,7 +200,7 @@
     -ms-writing-mode: tb-rl;
     writing-mode: tb-rl;
     position: absolute;
-    left: 55px;
+    left: 25px;
     top: 20%;
     display: flex;
     align-items: baseline;
@@ -237,7 +237,7 @@
 
 .catalog .h3.arrow-prew{
     position: relative;
-    margin-bottom: 80px;;
+    margin-bottom: 71px;
     &:before{
         content: "";
         display: block;
@@ -254,14 +254,13 @@
 }
 
 .wrap-types{
-    margin-bottom: 130px;
-    
+        margin-bottom: 100px;    
         display: flex;
         justify-content: flex-start;
         flex-flow: wrap;
     .type-img-wrap, a.type-img-wrap {
         width: 100%;
-        height: 175px;
+        height: 153px;
         margin-bottom: 12px;;
         overflow: hidden;
         display: block;
@@ -275,9 +274,9 @@
     .type{
         width: 175px;
         &:not(:nth-child(6n)){
-            margin-right: 22px;;
+            margin-right: 28px;;
         }
-        margin-bottom: 30px;;
+        margin-bottom: 12px;;
         cursor: pointer;
          &:hover{
             img{
@@ -287,6 +286,7 @@
     }
     p {
         text-align: center;
+        font-weight: 600;
     }
 }
 
@@ -302,17 +302,26 @@
         display: flex;
         justify-content: space-between;
         .row-small{
-            width: 24%
+            width: 27%;
+            padding-top: 43px;
         }
         .row-center{
             width: 49%;
             .advantages-img-wrap{
                 width: 514px;
+                margin-left: 19px;
                 img{
                     width: 100%;
                 }
             }
         }
+    }
+    .normal_text_bold{
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .advantages-row .check {
+        margin-bottom: 106px;
     }
 }
 
@@ -474,7 +483,7 @@
     position: relative;
     justify-content: space-between;
     z-index: 2;
-    margin-bottom: 460px;
+    margin-bottom: 439px;
     // margin-top: -55px;
     // margin-left: -121px;;
     .catalog-img-wrap{
@@ -503,8 +512,9 @@
 
 .faq-block{
     margin-bottom: 65px;
+    padding-top: 10px;;
     .h2{
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
 }
 
@@ -524,7 +534,7 @@
     font-size: 16px;
     line-height: 150%;
     color: #1A2335;
-    padding: 34px 0px;
+    padding: 30px 0 ;
   }
   
 .line {
@@ -541,8 +551,8 @@
     font-weight: bold;
     float: right;
     margin-left: 5px;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     transition: all ease 0.3s ;
     background-image: url('../img/red-cross.svg');
     background-size: cover;;
@@ -570,6 +580,9 @@
 
   .portfolio{
     padding: 65px 0px;
+    .h2{
+        margin-bottom: 0px;;
+    }
   }
 
 
@@ -601,8 +614,8 @@
     flex-flow: wrap;
     .item {
         width:369px;
-        margin-right: 31px;  
-        margin-bottom: 46px;;      
+        margin-right: 45px;  
+        margin-bottom: 27px;;      
         &:nth-child(3n){
             margin-right: 0px;
         }
@@ -631,6 +644,8 @@
         font-size: 10px;
         line-height: 150%;
         color: #A9A9A9;
+        margin-bottom: 3px;
+        
     }
     .item-name{
         font-size: 18px;
@@ -708,16 +723,19 @@
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
-    padding-bottom: 100px;;
+    // padding-bottom: 100px;;
     position: relative;
     .part-1{ 
         width: 33%;
         .h2 {
+            margin-bottom: 38px;
             width: 300px;
-            margin-bottom: 42px;
+            line-height: 126%;
+
         }    
         .normal_text{
             margin-bottom: 15px;
+            line-height: 147%;
         }   
     }
     .part-2 {
@@ -841,8 +859,9 @@
     background-color: #f7f7f7;
 }
 .adresses-wrap{
+    margin-bottom: 120px;;
     .line{
-        padding: 40px 0px 40px;
+        padding: 24px 0;
         display: flex;
         justify-content: space-between;
         &:not(:last-child){
@@ -851,11 +870,14 @@
     }
     .name-part{
         width: 277px;
+        font-weight: 800;
     }
     .adress {
-        width: 687px;
+        width: 593px;
+        padding-right: 177px;
         p {
             width: 70%;
+            margin-bottom: 0px;;
         }
     }
     .phone{
@@ -866,6 +888,7 @@
     .normal_text_bold{
         font-size: 18px;
         margin-bottom: 15px;
+        font-weight: 700;
     }
 
 }
@@ -950,6 +973,7 @@
     }
     .adresses-wrap .adress{
         width: 100%;
+        padding-right: 0px;
     }
     .adresses-wrap .line{
         flex-direction: column;
@@ -1212,6 +1236,11 @@
     }
 
 }
+
+.heplpfull-block{
+    margin-bottom:  100px;
+}
+
 
 @media screen and (max-width:768px) {
     .slide {
