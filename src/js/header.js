@@ -109,14 +109,13 @@ if (modal && modal[0]){
 }
 
 
+// let inputFlag = document.querySelector(".phone-flag");
 
-let inputFlag = document.querySelector(".phone-flag");
-
-  window.intlTelInput(inputFlag, {
-    showFlags: true,
-    separateDialCode: true,
-    allowDropdown: true,
-    preferredCountries: ["ua","pl", "md" ],
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-  });
+//   window.intlTelInput(inputFlag, {
+//     showFlags: true,
+//     separateDialCode: true,
+//     allowDropdown: true,
+//     preferredCountries: ["ua","pl", "md" ],
+//     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+//   });
 

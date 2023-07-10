@@ -109,6 +109,7 @@
     line-height: 29px;
     text-align: center;
     margin-right: 30px;
+    margin-bottom: 0px;;
 }
 
 .social-ul{
@@ -226,6 +227,9 @@
     .l-footer{
         padding: 40px 0px 45px;;
     }
+    .main-screen-page .wrap-map iframe{
+        height: 400px;
+    } 
 }
 
 @media screen and (max-width: 600px){
