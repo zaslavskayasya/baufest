@@ -312,7 +312,14 @@ body {
       width: 300px;
     }
   }
-
+  .large-block{
+    margin-top: 30px;;
+    margin-bottom: 50px;;
+    .long-wrap .wrap-image {
+        // height: 15px;
+        overflow: visible;
+    }
+  }
 }
 
 

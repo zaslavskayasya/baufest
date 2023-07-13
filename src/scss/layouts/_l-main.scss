@@ -64,7 +64,7 @@
     font-size: 0px;;
     background-color: h.$accent-color;
     position: absolute;
-    bottom: 37px;
+    bottom: 0px;
     right: 6px;
     left: auto;
     &:hover{
@@ -76,7 +76,7 @@
     font-size: 0px;;
     background-color: #888C8F;
     position: absolute;
-    bottom: 37px;
+    bottom: 0px;
     right: 46px;
     left: auto;
     &:hover{
@@ -91,7 +91,7 @@
 
 .slider__counter{
     position: absolute;
-    bottom: -41px;
+    bottom: -72px;
     left: 47%;
 }
 
@@ -359,7 +359,7 @@
 }
 
 .price-list-block{
-    padding: 34px 0px;
+    padding: 74px 0px;
     position: relative;
     &.clean-background{
         &:before {
@@ -381,6 +381,9 @@
     .container, .container-short{
         position: relative;
         z-index: 5;
+    }
+    .wrapper-m .back-text {
+        font-size:86px;
     }
 
 }
@@ -469,7 +472,7 @@
 .back-text{
     font-style: normal;
     font-weight: 800;
-    font-size: 152px;
+    font-size: 100px;
     line-height: 211px;    
     text-transform: uppercase;    
     color: #F4F4F4;    
@@ -957,6 +960,11 @@
 }
 
 @media screen and (max-width: 768px){
+    .price-list-block{
+        .wrapper-m .back-text {
+            font-size: 46px;
+        }
+    }
     .about-wrap {
         flex-direction: column;
         .part-1{ 
@@ -1337,21 +1345,29 @@
     .advantages .advantages-wrap .row-small {
         width: 100%;
         order: 1;
+        padding-top:5px;
     }
     .advantages .advantages-wrap .row-center {
         width: 100%;
         order: 3;
     }
+    .advantages {
+        margin-bottom: 35px;
+    }
     .advantages .h2 {
         margin-bottom: 30px;
     }
     .check {
-        margin-bottom: 15px;
+        margin-bottom: 19px;
         padding-top: 0px;
+        padding-left: 34px;
     }
     .advantages-row .check{
         margin-bottom: 15px;
         padding-top: 0px;;
+    }
+    .advantages .advantages-row .check {
+        margin-bottom: 15px;
     }
     .catalog{
         margin-bottom: 30px;;
@@ -1467,6 +1483,13 @@
     .catalog-place{
         margin-bottom: 40px;
         flex-direction: column;
+    }
+    .advantages .normal_text_bold {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .advantages-material{
+
     }
 
 

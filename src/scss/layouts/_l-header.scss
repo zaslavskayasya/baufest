@@ -103,7 +103,7 @@
 }
 
 /* Dropup Button */
-.menu-item-has-children {
+.menu-item-has-children.dropup a:nth-child(1) {
     position: relative;
     &::after{
         content: "";
@@ -115,10 +115,18 @@
         top: 50%;
         transform: translateY(-50%);
         background-image: url(../img/arrow-down-bold.svg);
-
-
     }
 }
+
+.menu-item-has-children.dropup .sub-menu a{
+    &::after{
+        display: none;
+    }
+
+}
+
+
+
 
 /* The container <div> - needed to position the dropup content */
 .dropup {
@@ -246,17 +254,30 @@
         .dropup {
             display: inline-block;
             position: relative;
-                text-align: center;
+                text-align: center;;
+
             // margin-bottom: 33px;
+            li{
+                // text-align: left;
+                margin-bottom: 0px;;
+                font-weight: 400;
+            }
         }
         .dropup.open{
             margin-bottom: 20px;
             .sub-menu{
                 display: block;    
                 width: auto;      
-                    text-align: center;      
+                text-align: center;  
+                margin-bottom: 20px;;
+  
             }
         }
+    }
+    // .menu-item-has-children:after{
+    //     top:10px;
+    // }
+    .open-header {
     }
     .dropup:hover .sub-menu {
         display: none;;

@@ -50,7 +50,7 @@
         display: none;;
     }
     .actual-colors-block{
-        margin-bottom: 100px; ;
+        margin-bottom: 40px; ;
     }
 }
 
@@ -116,7 +116,7 @@
 
 .characteristick{
     position: relative;
-    padding-top: 250px;;
+    padding-top: 60px;;
     margin-bottom: 130px;;
     .h2{
         margin-bottom: 45px;;
@@ -201,6 +201,7 @@
     .catalog-page-one.catalog-page .h1 {
         margin-bottom: 15px;
     }
+
     .catalog-page-one{
         .h1{
             @include standart-flex;
@@ -224,7 +225,7 @@
             top: 0px;
         }
         .catalog-slider{
-            margin-bottom: 60px;;
+            margin-bottom: 160px;;
         }
         .catalog-slider .slick-next, .catalog-slider .slick-prev {
             bottom: 120px;
@@ -237,19 +238,23 @@
 
         }
     }
+    
     .catalog-page-one .catalog-slider .wrap-button {
         top: 0;
         margin-top: 130px;
         right: 0px
     }
     .catalog-page-one{
+        .catalog-slider{
+            overflow: visible;
+        }
         .catalog-slider .slick-dots {
             align-items: center;
             display: flex;
             justify-content: space-between;
             justify-content: center;
             position: absolute;
-            bottom: 88px;
+            bottom: -120px;
             left: 0px;
         }
         .catalog-slider .wrap-button {
@@ -257,7 +262,7 @@
         }
     }
     .catalog-page-one .catalog-slider .slick-next, .catalog-page-one .catalog-slider .slick-prev {
-        bottom: 208px;
+        bottom: 0px;
     }
     .descriptin-block{
         flex-direction: column;
@@ -267,7 +272,7 @@
         }
     }
     .characteristick{
-        padding-top: 118px;
+        padding-top: 30px;
     }
     .catalog-page-one .actual-colors-block{
         margin-bottom: 60px;;
@@ -281,8 +286,10 @@
     .catalog-page-one .actual-colors-block .h2{
         margin-bottom: 30px;
     }
+    .wrap-types .type-img-wrap, .wrap-types a.type-img-wrap {
+        height: 105px;
+    }
 
-    
 }
 
 @media screen and (max-width: 600px){

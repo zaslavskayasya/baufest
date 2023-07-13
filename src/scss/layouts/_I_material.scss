@@ -146,34 +146,40 @@
     //     }
     // }
     .advantages .advantages-wrap .row-center{
-        display: none;;
+        display: block;;
     }
     .advantages.advantages-material .advantages-wrap {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         width: 100%;;
     }
     .advantages.advantages-material .advantages-wrap .row-small{
-        width: 48%;
+        width: 100%;
         // margin-right: 40px;;
     }
     .advantages .advantages-wrap .row-center .advantages-img-wrap img{
-        display: none;;
+        display: block;
     }
-    // .advantages.advantages-material .advantages-wrap .row-center .advantages-img-wrap {
-    //     margin-top: 24%;
-    //     width: 300px;
-    // }
-    // .advantages.advantages-material{
-    //     .normal_text_bold{
-    //         font-size: 14px;
-    //     }
-    //     .advantages-row .check{
-    //         margin-bottom: 10px;;
-    //     }
-    // }
-    // .advantages.advantages-material .advantages-wrap .advantages-img-wrap {
-    //     left: auto;
-    //     right:0%;
-    // }    
+    .advantages.advantages-material .advantages-wrap .row-center .advantages-img-wrap {
+        margin-top: -50px;;
+        width: 300px;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translateX(0);;
+        right: auto;
+        margin: -50px auto;;
+    }
+    .advantages.advantages-material{
+        .normal_text_bold{
+            font-size: 14px;
+        }
+        .advantages-row .check{
+            margin-bottom: 10px;;
+        }
+    }
+    .advantages.advantages-material .advantages-wrap .advantages-img-wrap {
+        left: auto;
+        right:0%;
+    }    
 }
