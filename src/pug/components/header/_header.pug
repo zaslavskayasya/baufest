@@ -1,12 +1,8 @@
 header.header
     a.logo(href='index.html')
         img(src="./img/logo.svg", alt="")
-
-    .for-mobile
-        .close-button 
-            svg(width='17' height='16' viewbox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg')
-                path(d='M1.0003 14.9676L15.0238 1M1.0003 1L15.0241 14.9676' stroke='#1A2335' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-        .container 
+    .container
+        .for-mobile        
             ul.menu
                 li.menu-item-has-children.dropup                   
                     a(href="#") Компанія
@@ -38,11 +34,25 @@ header.header
                     a(href='https://zaslavskayasya.github.io/baufest/dist/gallery.html') Галерея
                 li
                     a(href='https://zaslavskayasya.github.io/baufest/dist/contact.html') контакти
+            .header-social
+                ul.inform-main
+                    li.inform-main-li 
+                        a(href="telto:+380677340060").price-list 
+                            img(src="./img/icons/phone-new.svg", alt="")  
+                            span +38–067–734–00–60
+                    li.inform-main-li
+                        a(href="") 
+                            img(src="./img/icons/viber-new.svg", alt="")  
+                    li.inform-main-li
+                        a(href="") 
+                            img(src="./img/icons/telegram-new.svg", alt="") 
+            .close-button 
+                svg(width='17' height='16' viewbox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1.0003 14.9676L15.0238 1M1.0003 1L15.0241 14.9676' stroke='#1A2335' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
     .div-for-menu
         .menu-button  
             svg(width='21' height='15' viewbox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg')
                 path(d='M1.0715 1.21429H19.9286M1.06836 7.5H19.9208M1.0715 13.7857H19.9208' stroke='#1A2335' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-
         ul.langs
             li 
                 a.disabled RU
