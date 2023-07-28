@@ -97,9 +97,9 @@
 }
 
 .soc-block{
-    display: flex ;
+    // display: flex ;
     margin-bottom: 35px;;
-    align-items: center;
+    // align-items: center;
 }
 
 .social-name{
@@ -107,9 +107,9 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
+    text-align: left;
     margin-right: 30px;
-    margin-bottom: 0px;;
+    margin-bottom: 20px;;
 }
 
 .social-ul{
@@ -124,23 +124,10 @@
         height: 44px;
         display: block;
         transition: all ease 0.3s;
-        svg{
-            width: 44px;;
-            height: 44px;
-            path{
-                width: 44px;;
-                height: 44px;    
-            }
-        }
         &:hover{
-            svg{
-                path{ 
-                    fill:  h.$accent-color;
-                    height: 44px;
-                    width: 44px;;
-                }
-            }
-        } 
+            opacity: 0.8;
+        }
+
     }
 }
 

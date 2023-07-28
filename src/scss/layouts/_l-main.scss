@@ -382,7 +382,7 @@
         pointer-events: none;
         z-index: 1;
         position: absolute; 
-        top: 253px; 
+        top: 14px; 
         left: 0px;
         height: 90%; 
         width: 100%;
@@ -878,6 +878,11 @@
             background: #F7F7F7;
             padding-left: 15px;
         }
+    }
+    .form-name{
+        max-width: 80%;
+        margin: 0 auto 25px;;
+       
     }
     .buttom{
         margin: 0 auto;
