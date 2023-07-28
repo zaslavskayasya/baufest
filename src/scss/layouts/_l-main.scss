@@ -181,9 +181,15 @@
         display: flex;;
         align-items: center;
         justify-content: space-between;
+
         .price{
-            font-size: 14px;;
+            font-size: 14px;
             color: h.$accent-color;
+            font-weight: 600;
+        }
+        .normal-text{
+            font-weight: 700;
+            font-size: 18px;
         }
     }
 
@@ -193,12 +199,13 @@
 .catalog .h3.arrow-prew{
     position: relative;
     margin-bottom: 71px;
+    padding-left: 15px;;
     &:before{
         content: "";
         display: block;
         position: absolute;
-        top: -20px;
-        left: -70px;
+        top: -18px;
+        left: -26px;
         height: 106px;
         width: 23px;
         background-size: cover;
@@ -207,6 +214,53 @@
 
     }
 }
+
+.wrap-arrowed-block{
+    display: flex;
+    justify-content: space-between;
+}
+.button-full{
+    background-image: url('../img/btn-back.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    width: 432px;
+    height: 91px;
+    line-height: 91px;;
+}
+
+
+.wrap-header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.all-link{
+    color: #1A2335;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    transition: all ease-in-out;
+    &:hover{
+        color: h.$accent-color
+    }
+    &.only-mob{
+        margin: 0 auto;
+    }
+}
+
 
 .wrap-types{
         margin-bottom: 100px;    
@@ -362,16 +416,7 @@
       transform: translateX(-100%); /* Повністю заходить за ліву частину екрану */
     }
   }
-// .marquee {
-//     overflow: hidden;
-//     display: flex;
-//     position: absolute;
-//     top: 0%;
-//     right: 0%;
-//     width: 100%;
-//     margin-right: -100%;
-//     z-index: 0;
-// }
+
 .dowload-block{
     .h2{
         margin-bottom: 85px;
@@ -1017,7 +1062,7 @@
 }
 
 
-@media screen and (max-width: 1222px){
+@media screen and (max-width: 1260px){
     .wrap-catalog .card {
         margin-bottom: 30px;
         width: 23%;
@@ -1034,6 +1079,14 @@
     .three-in-row-wrap .item{
         margin-right: 16px;
         width: 346px;
+    }
+    .catalog .h3 {
+        margin: 0 auto;
+        max-width: 417px;
+    }
+    .catalog .h3.arrow-prew:before {
+        left: -52px;
+        top: 7px;
     }
 
 }
@@ -1204,6 +1257,10 @@
     }
 
 
+    .button-full{
+        font-size: 12px;
+        // line-height: 81px;
+    }
 }
 
 
@@ -1211,7 +1268,7 @@
 @media screen and (max-width: 868px) {
     .catalog .h3 {
         margin: 0 auto 34px;
-        width: 550px;
+        width: 380px;
     }
     .wrap-catalog .card:not(:nth-child(3n)) {
         margin-right: 18px;
@@ -1271,11 +1328,23 @@
     .wrap-catalog .card-image-wrap{
         height: 165px;
     }
+    .wrap-catalog .card-texts{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: self-start;
+        .normal-text{
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+    }
+    .wrap-catalog .card-texts .price{
+        font-size: 13px;;
+    }
     .card-texts .normal-text{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 75px;
+        // text-overflow: ellipsis;
+        // overflow: hidden;
+        // white-space: nowrap;
+        // width: 75px;
     }
     .wrap-catalog{
         margin-bottom: 50px;
@@ -1446,8 +1515,27 @@
     .advantages-material{
 
     }
-
-
+    .button-full{
+        height: 74px;
+        width: 325px;
+    }
+    .button-full.only-mob{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        span{
+            max-width: 120px;;
+            max-width: 199px;
+            display: block;
+            margin: auto;
+            line-height: initial;
+        }
+    }
+    .catalog .h3{
+        width: 100%;
+        max-width: 100%;;
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 630px){
@@ -1575,5 +1663,9 @@
     .three-in-row-wrap .wrap-item-image {
         height: 140px;
         width: 140px;
+    }
+    .button-full{
+        height: 60px;
+        width: 280px;
     }
 }

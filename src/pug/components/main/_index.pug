@@ -23,7 +23,9 @@ main.l-main
                 .buttonopenModal Замовити плитку 
 .catalog 
     .container 
-        p.h2 Каталог
+        .wrap-header-links 
+            p.h2 Каталог
+            a.all-link.only-desktop(href="https://zaslavskayasya.github.io/baufest/dist/catalog.html") Весь каталог
         .wrap-catalog 
             a(href="https://zaslavskayasya.github.io/baufest/dist/catalog-one.html").card 
                 .card-image-wrap 
@@ -71,7 +73,11 @@ main.l-main
                 .card-texts 
                     p.normal-text Тротуарный бордюр
                     p.price от 220 грн м²    
-        p.h3.arrow-prew Вся плитка в каталогі може бути представлена як в базових кольорах, так і в гамі Colormix.
+            a.all-link.only-mob(href="https://zaslavskayasya.github.io/baufest/dist/catalog.html") Весь каталог    
+        .wrap-arrowed-block
+            p.h3.arrow-prew Вся плитка в каталогі може бути представлена як в базових кольорах, так і в гамі Colormix.
+            a.button-full.only-desktop(href="#" dowload) 
+                span ЗАВАнтажити “Інструкція по Colormix”
         .wrap-types
             .type 
                 .type-img-wrap 
@@ -121,6 +127,8 @@ main.l-main
                 .type-img-wrap 
                     img(src="./img/types/1.png", alt="")
                 p.normal-text_bold Плитка 11 
+            a.button-full.only-mob(href="#" dowload) 
+                span ЗАВАнтажити “Інструкція по Colormix”
 .advantages 
     .container 
         p.h2  Основні переваги плитки BAUFEST
