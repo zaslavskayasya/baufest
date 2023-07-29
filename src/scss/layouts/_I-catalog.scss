@@ -17,10 +17,11 @@
     }
     .item-subheader1{
         font-style: normal;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 18px;
         line-height: 150%;
-         color: h.$primary-color;
+        color: h.$primary-color;
+        
     }
     .item-name.price{
         color: h.$accent-color;
@@ -181,6 +182,36 @@
     }
 }
 
+.scheme-slider{
+    &.center-slider .slick-next, 
+    &.center-slider .slick-prev{
+        bottom: 50%;
+    }
+    .wrap-slider-img{
+        img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;;
+        li{
+            margin: 0px 10px;
+            .thumbnails{
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 1024px){
     .catalog-page .three-in-row-wrap .wrap-item-image {
@@ -213,38 +244,34 @@
     .catalog-page .h1 {
         margin-bottom: 30px;
     }
-
-    // .three-in-row-wrap .item{
-    //     margin-right: 15px;;
-    // }
-    // .three-in-row-wrap .item:nth-child(3n) {
-    //     margin-right: 15px;;
-    // }
     .catalog-page .three-in-row-wrap .wrap-item-image {
         height: 164px;
     }
     .catalog-page .three-in-row-wrap .item {
         width: 48%;
+        margin-bottom: 40px;;
     }
     .catalog-page .item-subheader1 {
         color: #1a2335;
-        font-size: 12px;
+        font-size: 13px;
         max-lines: 1;
         float: left;
         text-overflow: ellipsis;
         overflow: hidden;
         height: 19px;
+        margin-bottom: 8px;
     }
     .catalog-page .height{
         font-size: 12px;
+        margin-bottom: 8px;;
     }
     .catalog-page .ul-icons li {
         height: 24px;
         position: relative;
-        width: 11px;
+        width: 26px;
     }
     .catalog-page .ul-icons li:not(:last-child) {
-        margin-right: 7px;
+        margin-right: 12px;
     }
     .catalog-page .ul-icons li:not(:last-child):after {
         background-color: #c1c1c1;
@@ -253,17 +280,32 @@
         display: block;
         height: 2px;
         position: absolute;
-        right: -4px;
+        right: -6px;
         top: 13px;
         width: 2px;
     }
     .catalog-page .items-info{
-        margin-bottom: 5px;;
+        margin-bottom: 8px;;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    .catalog-page .info-2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .plitka-wrap .h2 {
         margin-bottom: 30px;
         max-width: 100%;
+        .height{
+        }
     }
+    .catalog-page .info-2 .height{
+        margin-bottom: 8px;;
+
+    }
+
     .catalog-page .h2 {
         margin-bottom: 25px;
     }
@@ -290,6 +332,7 @@
     .plitka-wrap{
         padding-right: 0px;;
     }
+
 
 }
 

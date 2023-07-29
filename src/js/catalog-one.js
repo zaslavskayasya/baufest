@@ -12,7 +12,17 @@ $('.catalog-slider').slick({
     }
 });
 
-
+$('.scheme-slider').slick({
+  dots: true,
+  // centerMode: true,
+  focusOnSelect: true,
+  arrows: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  customPaging: function(slider, i) {
+      return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
+  }
+});
 
 function Marquee(selector, speed) {
     const parentSelector = document.querySelector(selector);
