@@ -483,6 +483,12 @@
     margin-bottom: 50px;
 }
 
+.back-text.back-new.margin-top{
+    margin-top: 15px;
+}
+
+
+
 .catalog-place{
     display: flex;
     position: relative;
@@ -1766,6 +1772,12 @@
     .three-in-row-wrap .item {
         width: 47%;
     }
+    .check:before {
+        height: 17px;
+        left: 2px;
+        top: 5px;
+        width: 17px;
+    }
 
 }
 
@@ -1781,6 +1793,8 @@
         margin: 0px;
         width: 200px;
     }
+
+    
 }
 
 @media screen and (max-width: 354px){
