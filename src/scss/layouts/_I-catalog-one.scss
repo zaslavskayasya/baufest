@@ -312,11 +312,19 @@
         display: none;
     }
     .gallery-block{
-        margin-bottom: 60px;
+        margin-bottom: 160px;
     }
     .characteristick{
         margin-bottom: 60px;;
     }
+    .scheme-slider .slick-dots li .thumbnails img{
+        width: 55px;
+        height: 55px;
+    }
+    .scheme-slider .slick-dots{
+        margin-top: 10px;;
+    }
+
 }
 
 
