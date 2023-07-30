@@ -2,10 +2,21 @@
     margin-bottom: 200px;
     .main-slider{
         .slide{
-            padding-top: 0px;;
+            padding-top: 0px;         
         }
     }
 }
+
+.wrap-slider-img{
+    max-height: 525px;
+    img{
+        display: block;
+        height: 525px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 .about-company-block.container-short{
     margin-bottom: 130px;
 }
