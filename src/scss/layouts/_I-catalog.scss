@@ -260,6 +260,7 @@
         overflow: hidden;
         height: 19px;
         margin-bottom: 8px;
+        font-weight: 800;
     }
     .catalog-page .height{
         font-size: 12px;
@@ -335,7 +336,17 @@
     .scheme-slider .wrap-slider-img img {
         height: 300px;
     }
-
+    .catalog-page .item-name.price{
+        font-size: 11px ;
+        font-weight: 600;
+    }
+    .catalog-page .height{
+        font-size: 11px ;
+        font-weight: 600;
+        span{
+            font-weight: 600;
+        }
+    }
 
 }
 
