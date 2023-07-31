@@ -183,6 +183,21 @@
 
     }
 
+.scheme-slider .slick-dots li {
+    transition: all ease 0.3s;
+    border-bottom: 2px solid transparent;
+}
+.scheme-slider{
+    .thumbnails img{
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+.scheme-slider .slick-dots li.slick-active {
+    margin: 0 10px;
+    border-bottom: 2px solid red;
+}
+
 @media screen and (max-width: 1100px){
     .catalog-page-one{
         .slide .button{
