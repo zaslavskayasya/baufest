@@ -12,9 +12,9 @@
   position: relative;
   margin-bottom: 7px;
   .logo{
-    left: 110px;
+    left: 34px;
     position: absolute;
-    top: 26px;
+    top: 28px;
     width: 204px;
     img{
         display: block;
@@ -87,15 +87,15 @@
 }
 
 
-.langs{
-  display: flex;;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  right: 148px;
-  top: 34px;
+// .langs{
+//   display: flex;;
+//   justify-content: space-between;
+//   align-items: center;
+//   position: absolute;
+//   right: 40px;
+//   top: 36px;
 
-}
+// }
 .menu-button{
     display: none;
 }
@@ -112,6 +112,12 @@
 }
 
 .langs{
+     display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top: 36px;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -257,7 +263,10 @@
 
 }
 
-
+.contacts-line.only-adaptive, 
+.langs.only-adaptive{
+    display: none;
+}
 
 @media screen and (max-width: 1520px){
     .header .logo{
@@ -273,6 +282,7 @@
         flex-direction: column;
         transform: translateY(-100%);
         transition: all ease 0.3s;
+        z-index: 9;
     }
     .div-for-menu{
         display: flex;
@@ -356,8 +366,23 @@
     }
     .langs{
         margin-right: 40px;
-        top: 35px;
+        top: 0px;
+        position: relative;
+        z-index: 1;
 
+    }
+    .contacts-line.only-adaptive{
+        display: flex;
+        margin-right: 60px;;
+    }
+    .header {
+        padding: 32px 25px 32px 46px;
+    }
+    .header-contacts{
+        display: none;
+    }
+    .langs.only-adaptive{
+        display: flex;
     }
 }
 
@@ -377,12 +402,25 @@
         top: 27px;
         width: 120px;
     }
+    .hide-in-adaptive{
+        display: none;
+    }
+    .langs.on-big-screen{
+        display: none;;
+    }
+    .contacts-line.only-adaptive {
+        margin-right: 26px;
+    }
     .langs {
-        margin-right: 44px;
-        top: 28px;
+        margin-right: 3px;
+        top: 0;
+        right: 0;
     }
     
 }
 
 @media screen and (max-width: 350px){
+    .contacts-line.only-adaptive {
+        margin-right: 12px;
+    }
 }
