@@ -1,5 +1,3 @@
-console.log('.about-slider');
-
 $(document).ready(function(){
     var $slider = $('.main-slider');
     

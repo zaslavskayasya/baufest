@@ -1,5 +1,3 @@
-console.log('one gallery');
-
 $('.gallery-type2').slick({
     dots: true,
     // centerMode: true,

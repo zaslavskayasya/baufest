@@ -1,5 +1,3 @@
-console.log('complex');
-
 $('.center-slider').slick({
     centerMode: true,
     centerPadding: '60px',

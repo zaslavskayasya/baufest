@@ -1,5 +1,3 @@
-console.log('mainPage js')
-
 $(document).ready(function(){
 var $slider = $('.main-slider');
 
@@ -76,14 +74,4 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-
-// var input = document.querySelector("#phone");
-//   window.intlTelInput(input, {
-//     showFlags: true,
-//     separateDialCode: true,
-//     allowDropdown: true,
-//     preferredCountries: ["ua","pl", "md" ],
-//     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-//   });
 

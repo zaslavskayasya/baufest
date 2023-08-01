@@ -1,6 +1,3 @@
-console.log(`header js`);
-
-
 let openMenuBtn = document.querySelector('.menu-button');
 let closeMenuBtn = document.querySelector('.close-button');
 
@@ -64,21 +61,9 @@ closeThankYouModalBtn.addEventListener("click", function() {
   closeThankYouModal();
 });
 
-// console.log(overlay)
-
-// modals.forEach(function(ite, index) {
-//   ite.addEventListener("click", function(e) {
-//     console.log(e.target);
-//     if ($(e.target).hasClass('modal-myModal')) {
-//       closeModal(index);
-//       overlay.style.display = "none";
-//     }
-//   });
-// });
 
 function openModal(e) {
   let target = e.target;
-  // console.log(target);
   modal[0].style.display = "block";
   overlay.style.display = "block";
 }

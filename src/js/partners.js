@@ -1,6 +1,3 @@
-console.log('parnters');
-
-
 let input = document.querySelector("#phone");
 window.intlTelInput(input, {
   showFlags: true,

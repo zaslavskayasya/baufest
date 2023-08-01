@@ -1,5 +1,3 @@
-console.log('laboratory');
-
 $('.center-slider').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -28,6 +26,7 @@ $('.center-slider').slick({
 
 
   var input = document.querySelector("#phone");
+
   window.intlTelInput(input, {
     showFlags: true,
     separateDialCode: true,

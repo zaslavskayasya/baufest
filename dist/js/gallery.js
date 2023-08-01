@@ -1,4 +1,3 @@
-console.log('gallery');
 
 document.addEventListener("DOMContentLoaded", function() {
     const themeFilters = document.getElementsByClassName("theme-filter");
