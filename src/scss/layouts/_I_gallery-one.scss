@@ -64,10 +64,10 @@
     width: 187px;
     display: block;
     height:140px;
-    margin: 0px 0px 0px 15px;
+    margin: 10px 10px 10px 10px;
     img{
         // max-width: 100px;;
-        margin: 10px;;
+        margin: 0px;;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -181,5 +181,14 @@
     .link-type{
         display: block;;
         margin: 0px auto 15px
+    }
+}
+
+@media screen and (max-width: 550px){
+    .gallery-type2 .wrap-slider-img{
+        height: 271px;
+    }
+    .gallery-type2 {
+        margin-bottom: 60px;
     }
 }
