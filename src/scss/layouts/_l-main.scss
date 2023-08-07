@@ -910,12 +910,14 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        align-items: flex-start;
         .form-row{
             margin-bottom: 0px;
             width: 32%;
             max-width: 32%;
             .button{
-                margin-bottom: 0px;;
+                margin-bottom: 0px;
+                margin-top: 26px;
             }
             input{
                 width: 100%;
@@ -933,9 +935,7 @@
         padding: 24px 0;
         display: flex;
         justify-content: space-between;
-        &:not(:last-child){
-            border-bottom: 1px solid #888C8F;
-        }
+
     }
     .name-part{
         width: 277px;
