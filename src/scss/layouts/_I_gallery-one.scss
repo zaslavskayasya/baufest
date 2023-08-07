@@ -4,7 +4,7 @@
 
 .gallery-type2{
     overflow: hidden;
-    margin-bottom: 112px;
+    margin-bottom: 15px;
     .slick-dots{
         @include standart-flex;  
 
@@ -19,7 +19,7 @@
         }
     }
     .slick-next, .slick-prev{
-        bottom: 400px;
+        bottom: 220px;
     }
     .slick-prev{
         left: 0px;
@@ -55,6 +55,43 @@
         opacity: 0.7;
     }
 
+}
+
+.gallery-type-nav, 
+.gallery-type-nav2{
+    margin-bottom: 130px;;
+    .slide{
+        cursor: pointer;
+        width: 100px;
+        display: block;
+        height:100px;
+        margin: 10px 10px 10px 10px;
+        padding-top: 0px;
+        position: relative;
+        img{
+            // max-width: 100px;;
+            margin: 0px;;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 100%;
+             position: absolute;
+             left: 0px;
+             bottom: -9px;
+             height: 2px;
+             background-color: transparent;
+             transition: all ease 0.3;
+        }
+    }
+    .slide.slick-current:after{
+         background-color: red;
+
+        // border-bottom: 1px solid red;
+    }
 }
 
 .thumbnails2 {
@@ -182,6 +219,9 @@
         display: block;;
         margin: 0px auto 15px
     }
+    .gallery-type-nav, .gallery-type-nav2 {
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -189,6 +229,6 @@
         height: 271px;
     }
     .gallery-type2 {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 }

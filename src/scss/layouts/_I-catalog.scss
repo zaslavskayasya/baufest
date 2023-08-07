@@ -185,8 +185,17 @@
 .scheme-slider{
     &.center-slider .slick-next, 
     &.center-slider .slick-prev{
-        bottom: 50%;
+        bottom: 40%;
     }
+    &.center-slider{
+        .slick-prev{
+            left: 0%;
+        }
+        .slick-next{
+            right: 0%;
+        }
+    }
+
     .wrap-slider-img{
         img{
             width: 100%;

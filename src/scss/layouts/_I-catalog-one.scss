@@ -4,7 +4,7 @@
 
 .catalog-page-one{
     .catalog-slider .slick-next, .catalog-slider .slick-prev {
-        bottom: 120px;
+        bottom: 0px;
     }
     .slick-next {
         right: 0px;
@@ -56,7 +56,7 @@
 
 .catalog-slider{
     overflow: hidden;
-    margin-bottom: 112px;
+    margin-bottom: 15px;
     .slick-dots{
         @include standart-flex;  
 

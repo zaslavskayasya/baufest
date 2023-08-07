@@ -1,27 +1,58 @@
 
 $('.catalog-slider').slick({
-    dots: true,
+    dots: false,
     // centerMode: true,
     focusOnSelect: true,
     arrows: true,
     slidesToScroll: 1,
     slidesToShow: 1,
-    customPaging: function(slider, i) {
-        return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
-    }
+    asNavFor: '.gallery-type-nav ',
+    // customPaging: function(slider, i) {
+    //     return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
+    // }
 });
 
+$('.gallery-type-nav ').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.catalog-slider',
+  dots: false,
+  arrows: false,    
+  centerMode: true,
+  focusOnSelect: true,
+  variableWidth: true
+});
+
+
+
+
+
 $('.scheme-slider').slick({
-  dots: true,
+  dots: false,
   // centerMode: true,
   focusOnSelect: true,
   arrows: true,
   slidesToScroll: 1,
   slidesToShow: 1,
-  customPaging: function(slider, i) {
-      return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
-  }
+  asNavFor: '.gallery-type-nav2 ',
+  // customPaging: function(slider, i) {
+  //     return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
+  // }
 });
+
+$('.gallery-type-nav2 ').slick({
+  // slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.scheme-slider',
+  dots: false,
+  arrows: false,    
+  centerMode: true,
+  focusOnSelect: true,
+  variableWidth: true
+});
+
+
+
 
 function Marquee(selector, speed) {
     const parentSelector = document.querySelector(selector);

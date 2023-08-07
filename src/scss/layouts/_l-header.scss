@@ -154,6 +154,7 @@
 /* Dropup Button */
 .menu-item-has-children.dropup a:nth-child(1) {
     position: relative;
+ 
     &::after{
         content: "";
         position: absolute;
@@ -167,12 +168,26 @@
     }
 }
 
+.menu-item-has-children.dropup.active a:nth-child(1) {
+    color: h.$accent-color;
+}
+
+.menu-item-has-children.dropup.active .sub-menu a {
+    color: h.$primary-color;
+}
+
+.menu-item-has-children.dropup.active .sub-menu li.active a {
+    color: h.$accent-color;
+}
+
+
 .menu-item-has-children.dropup .sub-menu a{
     &::after{
         display: none;
     }
-
 }
+
+
 
 
 

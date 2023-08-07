@@ -54,6 +54,22 @@
     // display: none;
 }
 
+.gallery-type2 .slick-dots{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+
+.gallery-type2 .slick-dots li {
+    scroll-snap-align: start;
+    margin: 0 10px;
+    transition: margin 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+  }
+
+
 .load-btn{
     position: relative;
     &.active {
