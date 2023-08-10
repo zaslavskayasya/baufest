@@ -46,7 +46,7 @@
             margin-bottom: 20px;
         }
         // .slick-track{
-        //     transform: translate3d(-53px, 0px, 0px)!important;
+        //     transform: translate3d(0px, 0px, 0px)!important;
         // }
     }
     .price-list-block:before{
@@ -56,6 +56,10 @@
         margin-bottom: 40px; ;
     }
 }
+.slick-list.draggable{
+    padding-left: 0px!important;
+}
+
 
 .catalog-slider{
     overflow: hidden;
