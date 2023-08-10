@@ -7,9 +7,6 @@ $('.catalog-slider').slick({
     slidesToScroll: 1,
     slidesToShow: 1,
     asNavFor: '.gallery-type-nav ',
-    // customPaging: function(slider, i) {
-    //     return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
-    // }
 });
 
 $('.gallery-type-nav ').slick({
@@ -35,18 +32,15 @@ $('.scheme-slider').slick({
   slidesToScroll: 1,
   slidesToShow: 1,
   asNavFor: '.gallery-type-nav2 ',
-  // customPaging: function(slider, i) {
-  //     return '<div class="thumbnails">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
-  // }
 });
 
 $('.gallery-type-nav2 ').slick({
-  // slidesToShow: 3,
+
   slidesToScroll: 1,
   asNavFor: '.scheme-slider',
   dots: false,
   arrows: false,    
-  centerMode: true,
+  // centerMode: true,
   focusOnSelect: true,
   variableWidth: true
 });
