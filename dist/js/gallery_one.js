@@ -20,7 +20,7 @@ $('.gallery-type-nav ').slick({
     asNavFor: '.gallery-type2',
     dots: false,
     arrows: false,    
-    centerMode: true,
+    // centerMode: true,
     focusOnSelect: true,
     variableWidth: true
   });
