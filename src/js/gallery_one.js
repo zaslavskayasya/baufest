@@ -1,83 +1,25 @@
-// $('.gallery-type2').slick({
-//     dots: false,
-//     // centerMode: true,
-//     focusOnSelect: true,
-//     arrows: true,
-//     slidesToScroll: 1,
-//     slidesToShow: 1,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     fade: true,
-//     asNavFor: '.gallery-type-nav ',
-//     // customPaging: function(slider, i) {
-//         //     return '<div class="thumbnails2">' +$(slider.$slides[i]).find('img').prop('outerHTML')+ '</div>';
-//     // }
-// });
+let gallerySlide = $('.gallery-type2')
 
-// $('.gallery-type-nav ').slick({
-//     // slidesToShow: 3,
-//     slidesToScroll: 1,
-//     asNavFor: '.gallery-type2',
-//     dots: false,
-//     arrows: false,    
-//     // centerMode: true,
-//     focusOnSelect: true,
-//     variableWidth: true
-//   });
-
-
-
-$('.gallery-type2').slick({
-    dots: false,
-    // centerMode: true,
-    focusOnSelect: true,
-    arrows: true,
-
-    asNavFor: '.gallery-type-nav ',
-    infinite: true
+gallerySlide.slick({
+  dots: false,
+  arrows: true,
+  slidesToShow: 1,
+  asNavFor: '.gallery-type-nav',
+  focusOnSelect: true,
+  infinite: false,
 });
 
-$('.gallery-type-nav ').slick({
+let sliderNavGallery = $('.gallery-type-nav');
+let countSlideGallery = sliderNavGallery.find('.slide').length;
 
+sliderNavGallery.slick({
   asNavFor: '.gallery-type2',
   dots: false,
-  arrows: false,    
-  centerMode: true,
+  arrows: false,
+  centerMode: false,
   focusOnSelect: true,
-  variableWidth: true,
-  infinite: false
+  variableWidth: false,
+  slidesToShow: countSlideGallery > 8 ? 10 : 7,
+  infinite: countSlideGallery > 8,
 });
 
-
-let $slider = $('.gallery-type-nav');
-   
-function updateSliderConfig() {
-  let slideCount = $slider.find('.slide').length;
-  let centerMode = slideCount > 5 ? false : true;
-  let infinityCheck = slideCount > 5 ? true : false;
-  
-  $slider.slick('unslick'); // Destroy the existing slider
-  
-  $slider.slick({
-
-      asNavFor: '.gallery-type2',
-      dots: false,
-      arrows: false,    
-      centerMode: centerMode,
-      focusOnSelect: true,
-      variableWidth: true,
-      infinite: infinityCheck,
-     
-  });
-}
-
-updateSliderConfig(); // Initialize the slider initially
-
-
-// Update the slider configuration whenever the window is resized
-$(window).on('resize', function() {
-  updateSliderConfig();
-  updateSliderConfig2();
-});
-
-  

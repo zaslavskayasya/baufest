@@ -1,131 +1,108 @@
 
-$('.catalog-slider').slick({
-    dots: false,
-    // centerMode: true,
-    focusOnSelect: true,
-    arrows: true,
+let catalogSlider = $('.catalog-slider')
 
-    asNavFor: '.gallery-type-nav ',
-    infinite: false
+catalogSlider.slick({
+  dots: false,
+  arrows: true,
+  // slidesToScroll: 1,
+  slidesToShow: 1,
+  asNavFor: '.gallery-type-nav',
+  focusOnSelect: true,
+  infinite: false,
 });
 
-$('.gallery-type-nav ').slick({
 
+let sliderNavCatalog = $('.gallery-type-nav');
+let countSlideCatalog = sliderNavCatalog.find('.slide').length;
+
+sliderNavCatalog.slick({
   asNavFor: '.catalog-slider',
   dots: false,
-  arrows: false,    
-  centerMode: true,
+  arrows: false,
+  centerMode: false,
   focusOnSelect: true,
-  variableWidth: true,
-  infinite: false
+  variableWidth: false,
+  slidesToShow: countSlideCatalog > 8 ? 10 : 7,
+  infinite: countSlideCatalog > 8,
 });
 
 
-let $slider = $('.gallery-type-nav');
+
+// let $slider = $('.gallery-type-nav');
    
-function updateSliderConfig() {
-  let slideCount = $slider.find('.slide').length;
-  let centerMode = slideCount > 5 ? false : true;
+// function updateSliderConfig() {
+//   let slideCount = $slider.find('.slide').length;
+//   let centerMode = slideCount > 5 ? false : true;
   
-  $slider.slick('unslick'); // Destroy the existing slider
+//   $slider.slick('unslick'); // Destroy the existing slider
   
-  $slider.slick({
+//   $slider.slick({
 
-      asNavFor: '.catalog-slider',
-      dots: false,
-      arrows: false,    
-      centerMode: centerMode,
-      focusOnSelect: true,
-      variableWidth: true,
-      infinite: false,
-      beforeChange: function (event, slick, currentSlide, nextSlide) {
-        if (nextSlide < currentSlide) {
-          event.preventDefault(); // Prevent sliding to the left
-        }
-      }
-  });
-}
+//       asNavFor: '.catalog-slider',
+//       dots: false,
+//       arrows: false,    
+//       centerMode: centerMode,
+//       focusOnSelect: true,
+//       variableWidth: true,
+//       infinite: false,
+//       beforeChange: function (event, slick, currentSlide, nextSlide) {
+//         if (nextSlide < currentSlide) {
+//           event.preventDefault(); // Prevent sliding to the left
+//         }
+//       }
+//   });
+// }
 
-updateSliderConfig(); // Initialize the slider initially
+// updateSliderConfig(); // Initialize the slider initially
 
 
-// Update the slider configuration whenever the window is resized
-$(window).on('resize', function() {
-  updateSliderConfig();
-  updateSliderConfig2();
-});
-
+// // Update the slider configuration whenever the window is resized
+// $(window).on('resize', function() {
+//   updateSliderConfig();
+// });
 
 
 
 
 
-$('.scheme-slider').slick({
+let schemeSlider = $('.scheme-slider');
+
+schemeSlider.slick({
   dots: false,
-  // centerMode: true,
-  focusOnSelect: true,
   arrows: true,
-  slidesToScroll: 1,
+  // slidesToScroll: 1,
   slidesToShow: 1,
-  asNavFor: '.gallery-type-nav2 ',
+  asNavFor: '.gallery-type-nav2',
+  focusOnSelect: true,
   infinite: false,
-
-
-
 });
 
-$('.gallery-type-nav2 ').slick({
-  // slidesToScroll: 1,
+let sliderNav = $('.gallery-type-nav2');
+let countSlide = sliderNav.find('.slide').length;
+
+sliderNav.slick({
   asNavFor: '.scheme-slider',
   dots: false,
-  arrows: false,    
-  // centerMode: true,
+  arrows: false,
+  centerMode: false,
   focusOnSelect: true,
-  // variableWidth: true,
-  infinite: false,
- 
+  variableWidth: false,
+  slidesToShow: countSlide > 8 ? 10 : 7,
+  infinite: countSlide > 8,
 });
 
-let $slider2 = $('.gallery-type-nav2');
-   
-function updateSliderConfig2() {
-  let slideCount = $slider2.find('.slide').length;
-  let centerMode = slideCount > 5 ? false : true;
-  let infinityCheck = slideCount > 5 ? true : false;
-  
-  $slider2.slick('unslick'); // Destroy the existing slider
-  
-  $slider2.slick({
-      // slidesToShow: 3,
-      // slidesToScroll: 1,
-      asNavFor: '.scheme-slider',
-      dots: false,
-      arrows: false,    
-      centerMode: centerMode,
-      focusOnSelect: true,
-      variableWidth: true,
-      infinite: infinityCheck,
 
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
 }
-
-
-updateSliderConfig2();
-
-
-
-
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  }
