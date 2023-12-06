@@ -77,8 +77,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 let adaptiveNumbers = document.querySelectorAll('.number');
-console.log(adaptiveNumbers);
-console.log(adaptiveNumbers.length);
+
 
 for (let i = 0; i < adaptiveNumbers.length; i++) {
   if (adaptiveNumbers[i].textContent.length >= 5 && adaptiveNumbers[i].textContent.length <= 6) {

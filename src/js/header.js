@@ -16,7 +16,7 @@ let dropsBtns = document.querySelectorAll('.dropup');
 
 dropsBtns.forEach((item, e)=>{
     item.addEventListener('click', (e)=>{
-        console.log(item);
+        // console.log(item);
         
         if(item.classList.contains("open")){
             item.classList.remove("open");
@@ -39,7 +39,6 @@ var closeThankYouModalBtn = thankYouModal.querySelector(".close");
 var forms = document.querySelectorAll(".form");
 
 openModalBtns.forEach(btn => {
-  // console.log(btn, index);
   btn.addEventListener("click", openModal);
 });
 
