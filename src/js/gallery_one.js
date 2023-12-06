@@ -7,7 +7,7 @@ gallerySlide.slick({
   asNavFor: '.gallery-type-nav',
   focusOnSelect: true,
   infinite: false,
-  // adaptiveHeight: true,
+  adaptiveHeight: true,
 
 });
 
