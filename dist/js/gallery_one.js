@@ -7,6 +7,7 @@ gallerySlide.slick({
   asNavFor: '.gallery-type-nav',
   focusOnSelect: true,
   infinite: false,
+
 });
 
 let sliderNavGallery = $('.gallery-type-nav');
@@ -21,6 +22,15 @@ sliderNavGallery.slick({
   variableWidth: false,
   slidesToShow: countSlideGallery > 8 ? 10 : 7,
   infinite: countSlideGallery > 8,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 5,
+      }
+    }
+  ]
+  
 });
 
 //# sourceMappingURL=gallery_one.js.map

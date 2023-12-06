@@ -16,7 +16,7 @@
     .button{
         position: absolute;
         right: 97px;
-        top: 142px;
+        bottom: 500px;
         cursor: pointer;
         &:hover{
             background:  linear-gradient(-45deg, transparent 15px, #8d0505 0);
@@ -384,7 +384,7 @@
         position: absolute; 
         top: 14px; 
         left: 0px;
-        height: 90%; 
+        height: 93%; 
         width: 100%;
         background-color: #F2F2F2;
     }
@@ -1286,6 +1286,7 @@
         position: relative;
         display: block;
         top: auto;
+        bottom: auto;
         margin-top: 50px;
         right: auto;
         margin: 100px auto 0px;        
@@ -1343,7 +1344,8 @@
 
     }
     .left-part{
-        order: 3;
+        order: 2;
+        margin-bottom: 35px;
     }
     .wrap-poposition .left-block{
         margin-top: 0px;
@@ -1351,7 +1353,7 @@
     }
     .wrap-poposition .right-part{
         width: 100%;
-        order: 2;
+        order: 3;
     }
     .catalog-place .catalog-img-wrap {
         left: -111px;

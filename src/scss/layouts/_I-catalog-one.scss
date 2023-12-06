@@ -339,6 +339,14 @@
     .wrap-types .type-img-wrap, .wrap-types a.type-img-wrap {
         height: 105px;
     }
+    .gallery-type-nav2 .slide, .gallery-type-nav .slide{
+        height: 40px!important;
+        width: 53px!important;
+        margin: 9px 9px 9px 2px;
+    }
+    .gallery-type2{
+        margin-bottom: 5px;
+    }
 
 }
 
@@ -395,6 +403,9 @@
                 width: 47%;
             }
         }
+    }
+    .gallery-type2{
+        margin-bottom: 5px;
     }
 }
 

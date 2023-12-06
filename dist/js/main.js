@@ -59,13 +59,13 @@ if ($slider.length) {
 });
 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    let panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
@@ -73,6 +73,25 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+
+let adaptiveNumbers = document.querySelectorAll('.number');
+console.log(adaptiveNumbers);
+console.log(adaptiveNumbers.length);
+
+for (let i = 0; i < adaptiveNumbers.length; i++) {
+  if (adaptiveNumbers[i].textContent.length >= 5 && adaptiveNumbers[i].textContent.length <= 6) {
+    adaptiveNumbers[i].style.fontSize = '54px';
+    adaptiveNumbers[i].style.lineHeight = '54px';
+    adaptiveNumbers[i].style.paddingTop = '15px';
+  } else if (adaptiveNumbers[i].textContent.length >= 6){
+    adaptiveNumbers[i].style.fontSize = '52px';
+    adaptiveNumbers[i].style.lineHeight = '52px';
+    adaptiveNumbers[i].style.paddingTop = '15px';
+  }
+}
+
 
 
 //# sourceMappingURL=main.js.map
