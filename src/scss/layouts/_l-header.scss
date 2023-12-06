@@ -407,6 +407,8 @@
     }
     .langs.only-adaptive{
         display: flex;
+        margin-left: 51%;
+        margin-right: auto;
     }
 }
 
@@ -440,6 +442,14 @@
         top: 0;
         right: 0;
     }    
+    .langs.only-adaptive {
+        display: flex;
+        margin-left: auto;
+        
+        
+        /* margin-left: 51%; */
+        /* margin-right: auto; */
+    }
 }
 
 @media screen and (max-width: 500px) {
