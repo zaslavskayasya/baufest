@@ -32,15 +32,22 @@
                         img(src="./img/catalog/linestone/500_340.jpg", alt="")
                 .slide                
                         img(src="./img/catalog/linestone/old_citi_razm_1_17.webp", alt="")
-               
-        .tabs-wrap 
-            .size-tab(data-size="40") 
-                span.tab-size 40
-            .size-tab.active(data-size="60")
-                span.tab-size 60 
-            .size-tab(data-size="80") 
-                span.tab-size 80
-            span мм.
+        .new-catalog-links.tabs-wrap 
+                p.h3   Обрати вистоу плитки:
+                .wrap-two-buttons 
+                    .size-tab.button(data-size="40") 40 мм
+                    .size-tab.button.active(data-size="60") 60 мм
+                    .size-tab.button(data-size="80") 80 мм
+
+      
+        //- p.normal_text Обрати вистоу плитки: 
+        //- .tabs-wrap 
+        //-     .size-tab(data-size="40") 
+        //-         span.tab-size 40 мм
+        //-     .size-tab.active(data-size="60")
+        //-         span.tab-size 60 мм
+        //-     .size-tab(data-size="80") 
+        //-         span.tab-size 80 мм
     .container    
         p.h2  Характеристики
         .char-block(data-tab="40")
