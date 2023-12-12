@@ -28,42 +28,6 @@ sliderNavCatalog.slick({
 
 
 
-// let $slider = $('.gallery-type-nav');
-   
-// function updateSliderConfig() {
-//   let slideCount = $slider.find('.slide').length;
-//   let centerMode = slideCount > 5 ? false : true;
-  
-//   $slider.slick('unslick'); // Destroy the existing slider
-  
-//   $slider.slick({
-
-//       asNavFor: '.catalog-slider',
-//       dots: false,
-//       arrows: false,    
-//       centerMode: centerMode,
-//       focusOnSelect: true,
-//       variableWidth: true,
-//       infinite: false,
-//       beforeChange: function (event, slick, currentSlide, nextSlide) {
-//         if (nextSlide < currentSlide) {
-//           event.preventDefault(); // Prevent sliding to the left
-//         }
-//       }
-//   });
-// }
-
-// updateSliderConfig(); // Initialize the slider initially
-
-
-// // Update the slider configuration whenever the window is resized
-// $(window).on('resize', function() {
-//   updateSliderConfig();
-// });
-
-
-
-
 
 let schemeSlider = $('.scheme-slider');
 
@@ -106,3 +70,35 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+
+
+let allTabs = document.querySelectorAll('.size-tab');
+let elementsWithDataTab = document.querySelectorAll('[data-tab]');
+
+
+allTabs.forEach((el) => {
+
+  el.addEventListener("click", ()=> {
+
+    allTabs.forEach((els) => {
+      els.classList.remove('active');
+    });
+
+    elementsWithDataTab.forEach((tabs)=>{
+      tabs.classList.remove('active');
+    });
+
+    let ourSize = el.dataset.size;
+    let shouldBeactive = document.querySelectorAll('[data-tab="' + ourSize + '"]');
+
+    shouldBeactive.forEach((activeParams) => {
+      activeParams.classList.add('active');
+    })
+
+    el.classList.add('active');
+
+  })
+
+})
