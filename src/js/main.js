@@ -76,20 +76,4 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-let adaptiveNumbers = document.querySelectorAll('.number');
-
-
-for (let i = 0; i < adaptiveNumbers.length; i++) {
-  if (adaptiveNumbers[i].textContent.length >= 5 && adaptiveNumbers[i].textContent.length <= 6) {
-    adaptiveNumbers[i].style.fontSize = '54px';
-    adaptiveNumbers[i].style.lineHeight = '54px';
-    adaptiveNumbers[i].style.paddingTop = '15px';
-  } else if (adaptiveNumbers[i].textContent.length >= 6){
-    adaptiveNumbers[i].style.fontSize = '52px';
-    adaptiveNumbers[i].style.lineHeight = '52px';
-    adaptiveNumbers[i].style.paddingTop = '15px';
-  }
-}
-
-
 
