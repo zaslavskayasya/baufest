@@ -9,10 +9,16 @@
                 span
                     a(href="#" aria-current="page") Лайнстоун
         p.h1 Лайнстоун 
-            span.only-mob.slide-price від 260 грн/м
+            span.only-mob.slide-price(data-tab="40") від 240 грн/м
+            span.only-mob.slide-price(data-tab="60") від 260 грн/м
+            span.only-mob.slide-price(data-tab="80") від 280 грн/м
         .wrap-whole-slider
             .wrap-button.only-desktop 
-                .slide-price від 260 грн/м
+                .slide-price(data-tab="40") від 240 грн/м
+                    sup 2
+                .slide-price.active(data-tab="60") від 260 грн/м
+                    sup 2
+                .slide-price(data-tab="80") від 280 грн/м
                     sup 2
                 .button.openModal Замовити             
             .catalog-slider 

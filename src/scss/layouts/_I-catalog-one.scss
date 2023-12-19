@@ -13,7 +13,12 @@
         right: 40px;
     }
     .wrap-whole-slider{
-        position: relative
+        position: relative;
+        .slick-track{
+            // width: 100%!important;
+            flex-wrap: nowrap;
+            display: flex;
+        }
     }
     .wrap-button{
         position: absolute;
@@ -307,7 +312,21 @@
 
 }
 
+.only-mob.slide-price.active{
+    display: none;
+}
+
+
 @media screen and (max-width: 768px){
+    .only-mob.slide-price{
+        display: none;
+    }
+    .only-mob.slide-price.active{
+        display: block;
+    }
+    .only-desktop .slide-price.active{
+        display: none;
+    }
     .gallery-block{
         margin-bottom: 180px;
     }
