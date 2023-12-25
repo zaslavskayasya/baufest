@@ -9,6 +9,14 @@ catalogSlider.slick({
   asNavFor: '.gallery-type-nav',
   focusOnSelect: true,
   infinite: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        infinite: true
+      }
+    }
+  ]
 });
 
 
@@ -24,6 +32,18 @@ sliderNavCatalog.slick({
   variableWidth: false,
   slidesToShow: countSlideCatalog > 8 ? 10 : 7,
   infinite: countSlideCatalog > 8,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        variableWidth: true,
+        slidesToShow: 3,
+        slideToScroll: 1,
+        infinite: true
+        // infinite: countSlideCatalog > 3,
+      }
+    }
+  ]
 });
 
 
@@ -39,6 +59,14 @@ schemeSlider.slick({
   asNavFor: '.gallery-type-nav2',
   focusOnSelect: true,
   infinite: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        infinite: true
+      }
+    }
+  ]
 });
 
 let sliderNav = $('.gallery-type-nav2');
@@ -53,6 +81,18 @@ sliderNav.slick({
   variableWidth: false,
   slidesToShow: countSlide > 8 ? 10 : 7,
   infinite: countSlide > 8,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        variableWidth: true,
+        slidesToShow: 3,
+        slideToScroll: 1,
+        infinite: true
+        // infinite: countSlideCatalog > 3,
+      }
+    }
+  ]
 });
 
 

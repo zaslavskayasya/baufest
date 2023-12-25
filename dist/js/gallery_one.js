@@ -27,11 +27,12 @@ sliderNavGallery.slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 5,
+        // slidesToShow: 3,
+        variableWidth: true,
       }
     }
   ]
-  
+
 });
 
 //# sourceMappingURL=gallery_one.js.map
